@@ -84,7 +84,6 @@
 
   img {
     max-width: 175px;
-    max-height: 175px;
     border-radius: unset;
 
     @include breakpoint($large) {
