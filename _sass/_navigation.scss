@@ -11,7 +11,7 @@
   @include clearfix;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 3em;
+  padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
   -webkit-animation: intro 0.3s both;
@@ -71,7 +71,7 @@
 
   li {
     display: block;
-    float: middle;
+    float: left;
     margin-left: -1px;
 
     a {
