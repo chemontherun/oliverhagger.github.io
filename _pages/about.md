@@ -16,7 +16,6 @@ About me
 
 I'm a PhD student at University College London (UCL) under  the supervision of Professor Daren Caruana. My research is centered around surface-enhanced Raman scattering for various analytes. 
 
-<img src="/images/rdyearproject.png" alt="Sample of 3rd year project report" />
 
   <div id="viewer" style="width: 100%; height: 500px;"></div>
   <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
