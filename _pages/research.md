@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
---- Grants
+ Grants
 
 
 {% if author.googlescholar %}
