@@ -12,16 +12,20 @@ All downloadable pdfs are password protected. For access, please email - <a href
 <h3>A REVIEW OF THE CRYSTAL SPONGE METHOD</h3>
 <p>Supervisor: Professor Simon Coles</p>
 
+<a href="/files/4th year project.pdf">Download here</a>
+
 <img src="/images/thyearproject.PNG" alt="Sample of 4th year project report" width="600" height="400"/>
 
-<a href="/files/4th year project.pdf">Download here</a>
+
 
 <h3>Calcium based Metal-Organic Frameworks (MOF) derived from CaCO3 precursor particles</h3>
 <p>Supervisor: Professor Darren Bradshaw</p>
 
+<a href="/files/3rd year project.pdf">Download here</a>
+
 <img src="/images/rdyearproject.PNG" alt="Sample of 3rd year project report" width="600" height="400"/>
 
-<a href="/files/3rd year project.pdf">Download here</a>
+
 
 
 
