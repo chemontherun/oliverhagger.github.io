@@ -9,7 +9,7 @@ All work in the following is unpublished work by Oliver Hagger.
 All downloadable pdfs are password protected. For access, please email - <a href="mailto:oliver.hagger.21@ucl.ac.uk">here</a>
 
 
-<h3>A REVIEW OF THE CRYSTAL SPONGE METHOD</h3>
+<h3>A review of the crystal sponge method</h3>
 <p>Supervisor: Professor Simon Coles</p>
 
 <a href="/files/4th year project.pdf">Download here</a>
