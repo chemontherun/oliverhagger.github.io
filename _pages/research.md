@@ -14,10 +14,10 @@ All downloadable pdfs are password protected. For access, please email - <a href
 
 <a href="/files/4th year project.pdf">Download here</a>
 
-<figure>
+
 <img src="/images/thyearproject.PNG" alt="Sample of 4th year project report" width="600" height="400"/>
 <figcaption>Preview of report</figcaption>
-</figure>
+
 
 
 
