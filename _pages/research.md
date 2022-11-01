@@ -8,8 +8,8 @@ author_profile: true
 All work in the following is unpublished work by Oliver Hagger. 
 All downloadable pdfs are password protected. For access, please email - <a href="mailto:oliver.hagger.21@ucl.ac.uk">here</a>
 
-Title:
-<head>A REVIEW OF THE CRYSTAL SPONGE METHOD</head>
+<h1>Title:</h1>
+<h2>A REVIEW OF THE CRYSTAL SPONGE METHOD</h2>
 
 
 <img src="/images/thyearproject.PNG" alt="Sample of 4th year project report" width="600" height="400"/>
