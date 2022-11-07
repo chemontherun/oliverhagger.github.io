@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my personal webiste. 
+Welcome to my personal website. 
 ------
 
 About me
