@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 All work in the following is unpublished work by Oliver Hagger. 
-All downloadable pdfs are password protected. For access, please email - <a href="mailto:oliver.hagger.21@ucl.ac.uk">here</a>
+All downloadable pdfs are password protected. For access, please <a href="mailto:oliver.hagger.21@ucl.ac.uk">email</a>
 
 
 <h3>A review of the crystal sponge method</h3>
