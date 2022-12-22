@@ -16,6 +16,14 @@ About me
 
 I'm a PhD student at University College London (UCL) under  the supervision of Professor Daren Caruana. My research is centered around surface-enhanced Raman scattering for various analytes.  
 
+<div style="position:relative;overflow:hidden;padding-top:56.25%;">
+  <iframe 
+   frameborder="0"
+   style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+   src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7011689248927932416"
+  ></iframe>
+</div>
+
 Fusion 360 research designs
 <img src="/images/plasma jet design fusion.png" alt="My test image" />
 
