@@ -8,6 +8,16 @@ redirect_from:
   - /about.html
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WR1GZF8FM6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WR1GZF8FM6');
+</script>
+
 Welcome to my personal website. 
 ------
 
