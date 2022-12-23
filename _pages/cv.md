@@ -9,6 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
+
+<h3>CV</h3>
+
+
+<a href="/files/Oliver_Hagger_CV.pdf">Download here</a>
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
