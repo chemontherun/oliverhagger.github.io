@@ -19,7 +19,7 @@ main:
     url: /data-analytics/
     
   - title: "CV"
-    url: files/Oliver_Hagger_CV.pdf
+    url: https://oliverhagger.github.io/files/Oliver_Hagger_CV.pdf
     
 #  - title: "Guide"
 #    url: /markdown/
