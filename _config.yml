@@ -86,7 +86,7 @@ author:
   name             : "Oliver Hagger"
   avatar           : "profile.jpg"
   bio              : "PhD Researcher at University College London & DSTL"
-  cv               : "https://oliverhagger.github.io/files/Oliver_Hagger_CV.pdf"
+  cv               : 
   location         : "London, UK"
   employer         :
   googlescholar    : 
