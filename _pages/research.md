@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 All work in the following is unpublished work by Oliver Hagger. 
-All downloadable pdfs are password protected. For access, please <a href="mailto:oliver.hagger.21@ucl.ac.uk">email</a>
+All downloadable pdfs are password protected. For access, please <a href="mailto:ohagger@icloud.com">email</a>
 
 
 <h3>A review of the crystal sponge method</h3>
@@ -24,7 +24,7 @@ All downloadable pdfs are password protected. For access, please <a href="mailto
 <h3>Calcium based Metal-Organic Frameworks (MOF) derived from CaCO3 precursor particles</h3>
 <p>Supervisor: Professor Darren Bradshaw</p>
 
-<a href="/files/3rd year project.pdf">Download here</a>
+<a href="/files/3rd year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
 
 <img src="/images/rdyearproject.PNG" class="img" alt="Sample of 3rd year project report" width="600" height="400"/>
 <figcaption>Preview of report</figcaption>
