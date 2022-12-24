@@ -19,8 +19,8 @@ main:
     url: /data-analytics/
     
   - title: "CV"
-    #url: /files/Oliver_Hagger_CV.pdf
-    url: /files/Oliver_Hagger_CV.pdf target="_blank" rel="noopener noreferrer"
+    url: /files/Oliver_Hagger_CV.pdf
+    
     
 #  - title: "Guide"
 #    url: /markdown/
