@@ -12,7 +12,7 @@ All downloadable pdfs are password protected. For access, please <a href="mailto
 <h3>A review of the crystal sponge method</h3>
 <p>Supervisor: Professor Simon Coles</p>
 
-<a href="/files/4th year project.pdf">Download here</a>
+<a href="/files/4th year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
 
 
 <img src="/images/thyearproject.PNG" class="img" alt="Sample of 4th year project report" width="600" height="400"/>
