@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Oliver Hagger"
+#title: "Oliver Hagger"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -27,7 +27,6 @@ I'm a PhD student at University College London (UCL) under  the supervision of P
 
 Posts
 ------
-
 
 <div style="position:relative;overflow:hidden;padding-top:56.25%;">
   <iframe 
