@@ -18,7 +18,7 @@ redirect_from:
   gtag('config', 'G-WR1GZF8FM6');
 </script>
 
-Welcome to my personal website. 
+Welcome to my personal website
 ------
 
 About me
