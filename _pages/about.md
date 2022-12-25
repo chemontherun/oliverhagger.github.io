@@ -23,7 +23,7 @@ Welcome to my personal website
 
 About me
 ------
-I'm a PhD student at University College London (UCL) under the supervision of Professor Daren Caruana. My research is the detection of illicit compounds primarily using surface-enhanced Raman scattering.  
+I am a PhD student at University College London (UCL) under the supervision of Professor Daren Caruana. My research focuses on detecting illicit compounds primarily using surface-enhanced Raman scattering. 
 
 Posts
 ------
