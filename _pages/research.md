@@ -4,7 +4,7 @@ title: "Research"
 permalink: /research/
 author_profile: true
 ---
-------
+<hr>
 
 All work in the following is unpublished work by Oliver Hagger. 
 All downloadable pdfs are password protected. For access, please <a href="mailto:ohagger@icloud.com">email</a>
