@@ -2,7 +2,7 @@ var addressPoints = [
   [
     "Porton Down DSTL, UK",
     51.1241,
-    1.7152
+    -1.7152
   ],
   [
     "London, UK",
@@ -17,6 +17,6 @@ var addressPoints = [
   [
     "Southampton, UK",
     50.934003,
-    1.39445
+    -1.39445
   ],
 ];
