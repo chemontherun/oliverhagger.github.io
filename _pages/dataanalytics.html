@@ -33,6 +33,35 @@ g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
 
 </code>
 
+<hr>
+
+<img src="/images/Teacher to student ratio final graph.png" alt="Teacher to student ratio plot" width="300" height="200" style="float:right;"/>
+
+
+<h2>Teacher to student ratio</h2>
+
+<p>RMarkdown file used for plotting</p>
+
+<a href="/files/Rmarkdown-for-student-to-teacher-ratio.pdf" target="_blank" rel="noopener noreferrer">Markdown file</a><br/>
+
+<p>Main chunk of code used for graph plotting</p>
+<br>
+<code   style="background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  font-size:10px;">
+g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
+  stat_summary(fun = mean, geom = "point", size = 5)+<br>
+  geom_vline(aes(xintercept=world_avg, colour="grey"))+<br>
+  geom_segment(
+    aes(y = region, yend = region,
+      x = world_avg, xend = student_ratio_region),
+    size = 0.8)
+
+
+</code>
+
 
 
 
