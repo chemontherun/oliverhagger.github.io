@@ -461,7 +461,7 @@ button {
   /* Main image in popup */
   img {
     &.mfp-img {
-      width: 600px;
+      width: auto;
       max-width: 100%;
       height: auto;
       display: block;
@@ -485,7 +485,7 @@ button {
       bottom: $mfp-image-padding-bottom;
       display: block;
       right: 0;
-      width: 600px;
+      width: auto;
       height: auto;
       z-index: -1;
       box-shadow: $mfp-shadow;
