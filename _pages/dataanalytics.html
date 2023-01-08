@@ -6,6 +6,10 @@ author_profile: true
 ---
 <hr>
 
+
+
+
+<img src="/images/Teacher to student ratio final graph.png" id="myImg" alt="Teacher to student ratio plot" width="300" height="200" style="float:right;"/>
 <script>
   var image = document.getElementById("myImg");
   image.onmouseover = function() {
@@ -17,10 +21,6 @@ author_profile: true
     image.style.height = "200px";
   }
 </script>
-
-
-<img src="/images/Teacher to student ratio final graph.png" id="myImg" alt="Teacher to student ratio plot" width="300" height="200" style="float:right;"/>
-
 
 <h2>Teacher to student ratio</h2>
 
@@ -56,6 +56,17 @@ g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
     image.style.height = "300px";
   }
 </script> -->
+<script>
+  var image = document.getElementById("myImg");
+  image.onmouseover = function() {
+    image.style.width = "450px";
+    image.style.height = "300px";
+  }
+  image.onmouseout = function() {
+    image.style.width = "300px";
+    image.style.height = "200px";
+  }
+</script>
 
 
 <h2>Teacher to student ratio</h2>
