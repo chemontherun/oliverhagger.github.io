@@ -15,8 +15,8 @@ main:
   - title: "Certifications"
     url: /certifications/
         
-  # - title: "Data analytics"
-  #   url: /data-analytics/
+   - title: "Data analytics"
+     url: /data-analytics/
     
   - title: "CV"
     url: /files/Oliver_Hagger_CV.pdf

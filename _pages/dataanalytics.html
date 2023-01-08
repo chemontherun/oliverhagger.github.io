@@ -7,6 +7,26 @@ author_profile: true
 <hr>
 
 
+<h2>Teacher to student ratio</h2>
+
+<img src="/images/Teacher to student ratio final graph.png" alt="Teacher to student ratio plot" />
+
+<p>RMarkdown file used for plotting</p>
+
+<a href="/files/Rmarkdown-for-student-to-teacher-ratio.pdf" target="_blank" rel="noopener noreferrer">Markdown file</a><br/>
+
+<p>Main chunk of code used for graph plotting</p>
+
+```
+g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
+stat_summary(fun = mean, geom = "point", size = 5)+
+geom_vline(aes(xintercept=world_avg, colour="grey"))+
+geom_segment(
+  aes(y = region, yend = region,
+      x = world_avg, xend = student_ratio_region),
+  size = 0.8)
+```
+
 
 
 

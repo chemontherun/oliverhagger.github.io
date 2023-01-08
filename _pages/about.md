@@ -25,15 +25,7 @@ About me
 ------
 I am a PhD student at University College London (UCL) under the supervision of Professor Daren Caruana. My research focuses on detecting illicit compounds primarily using surface-enhanced Raman scattering. 
 
-```
-df_ratio2 <- df_ratios %>%  
-  select(c("indicator", "country", "region","student_ratio", "student_ratio_region"))
 
-ratios_3 <- na.omit(df_ratio2)
-
-ggplot(ratios_3, aes(x = region, y = student_ratio)) +
-  geom_boxplot()
-```
 
 Posts
 ------
