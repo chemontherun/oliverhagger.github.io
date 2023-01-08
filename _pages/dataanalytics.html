@@ -22,12 +22,12 @@ border: 1px solid #999;
 display: block;
 padding: 20px;">
 g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
-stat_summary(fun = mean, geom = "point", size = 5)+
-geom_vline(aes(xintercept=world_avg, colour="grey"))+
-geom_segment(
-  aes(y = region, yend = region,
+  stat_summary(fun = mean, geom = "point", size = 5)+
+  geom_vline(aes(xintercept=world_avg, colour="grey"))+
+  geom_segment(
+    aes(y = region, yend = region,
       x = world_avg, xend = student_ratio_region),
-  size = 0.8)
+    size = 0.8)
 
 
 </code>
