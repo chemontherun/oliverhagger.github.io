@@ -16,7 +16,7 @@ author_profile: true
 <a href="/files/Rmarkdown-for-student-to-teacher-ratio.pdf" target="_blank" rel="noopener noreferrer">Markdown file</a><br/>
 
 <p>Main chunk of code used for graph plotting</p>
-
+{{markdown}}
 ```
 g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
 stat_summary(fun = mean, geom = "point", size = 5)+
@@ -25,7 +25,9 @@ geom_segment(
   aes(y = region, yend = region,
       x = world_avg, xend = student_ratio_region),
   size = 0.8)
+
 ```
+{{/markdown}}
 
 
 
