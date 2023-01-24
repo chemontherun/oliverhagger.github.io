@@ -457,22 +457,6 @@ button {
 
 // Image content type
 @if $mfp-include-image-type {
-
-  /* Main image in popup */
-  // img {
-  //   &.mfp-img {
-  //     width: auto;
-  //     // max-width: 100%;
-  //     height: auto;
-  //     display: block;
-  //     line-height: 0;
-  //     -webkit-box-sizing: border-box;
-  //     -moz-box-sizing: border-box;
-  //     box-sizing: border-box;
-  //     padding: $mfp-image-padding-top 0 $mfp-image-padding-bottom;
-  //     margin: 0 auto;
-  //   }
-  // }
   img {
     &.mfp-img {
       max-width: 100%;
@@ -486,9 +470,6 @@ button {
       margin: 0 auto;
     }
   }
-  /* The shadow behind the image */
-
-
   /* The shadow behind the image */
   .mfp-figure {
     line-height: 0;
