@@ -16,7 +16,7 @@ All downloadable pdfs are password protected. For access, please <a href="mailto
 <a href="/files/4th year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
 
 
-<centre><img src="/images/thyearproject.PNG" class="img" alt="Sample of 4th year project report" width="600" height="400" style='border:1px solid #000000;'/></centre>
+<p align="center"><img src="/images/thyearproject.PNG" class="img" alt="Sample of 4th year project report" width="600" height="400" style='border:1px solid #000000;'/></p>
 <figcaption>Preview of the report</figcaption>
 
 
