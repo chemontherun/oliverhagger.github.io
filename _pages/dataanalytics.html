@@ -7,49 +7,6 @@ author_profile: true
 <hr>
 
 
-
-
-<a href="/images/Teacher to student ratio final graph.png" target="_blank" width="300" height="200">
-  <img src="/images/Teacher to student ratio final graph.png" id="myImg2" alt="Teacher to student ratio plot" width="300" height="200" style="float:right;"/>
-</a>
-<!-- <script>
-  var image = document.getElementById("myImg");
-  image.onmouseover = function() {
-    image.style.width = "450px";
-    image.style.height = "300px";
-  }
-  image.onmouseout = function() {
-    image.style.width = "300px";
-    image.style.height = "200px";
-  }
-</script> -->
-
-<h2>Teacher to student ratio</h2>
-
-<p>RMarkdown file used for plotting</p>
-
-<a href="/files/Rmarkdown-for-student-to-teacher-ratio.pdf" target="_blank" rel="noopener noreferrer">Markdown file</a><br/>
-
-<p>Main chunk of code used for graph plotting</p>
-<br>
-<code   style="background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-  font-size:10px;">
-g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
-  stat_summary(fun = mean, geom = "point", size = 5)+<br>
-  geom_vline(aes(xintercept=world_avg, colour="grey"))+<br>
-  geom_segment(
-    aes(y = region, yend = region,
-      x = world_avg, xend = student_ratio_region),
-    size = 0.8)
-
-
-</code>
-<hr>
-
-
 <table style="background-color: transparent; border-collapse: collapse; border: none; width: 100%;border-spacing: 0 150px;">
   <tr style="padding: 100px 0;">
     <td style="width: 50%; border: none;padding-bottom: 20px;padding-top: 20px;">
@@ -85,41 +42,5 @@ g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
   </tr>
 
 </table>
-<!--
 
-<a href="/images/Teacher to student ratio final graph.png" target="_blank" width="300" height="200">
-  <img src="/images/Teacher to student ratio final graph.png" id="myImg2" alt="Teacher to student ratio plot" width="300" height="200" style="float:right;"/>
-</a>
-<h2>Teacher to student ratio</h2>
-
-<p>RMarkdown file used for plotting</p>
-
-<a href="/files/Rmarkdown-for-student-to-teacher-ratio.pdf" target="_blank" rel="noopener noreferrer">Markdown file</a><br/>
-
-<p>Main chunk of code used for graph plotting</p>
-<br>
-<code   style="background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-  font-size:10px;">
-g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
-  stat_summary(fun = mean, geom = "point", size = 5)+<br>
-  geom_vline(aes(xintercept=world_avg, colour="grey"))+<br>
-  geom_segment(
-    aes(y = region, yend = region,
-      x = world_avg, xend = student_ratio_region),
-    size = 0.8)
-
-
-</code>
-<hr> -->
-
-
-
-
-<!-- {% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %} -->
+<hr>
