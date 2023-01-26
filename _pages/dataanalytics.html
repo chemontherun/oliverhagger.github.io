@@ -64,8 +64,25 @@ g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
       <img src="/images/Teacher to student ratio final graph.png" id="myImg2" alt="Teacher to student ratio plot" width="300" height="200" style="float:right;"/>
     </a></td>
   </tr>
+  <tr style="padding: 100px 0;">
+    <td><code   style="background-color: #eee;
+      border: 1px solid #999;
+      display: block;
+      padding: 20px;
+      font-size:10px;">
+    g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
+      stat_summary(fun = mean, geom = "point", size = 5)+<br>
+      geom_vline(aes(xintercept=world_avg, colour="grey"))+<br>
+      geom_segment(
+        aes(y = region, yend = region,
+          x = world_avg, xend = student_ratio_region),
+        size = 0.8)
+    
+    
+    </code></td>
+  </tr>
 
-
+</table>
 <!--
 
 <a href="/images/Teacher to student ratio final graph.png" target="_blank" width="300" height="200">
