@@ -22,12 +22,13 @@ author_profile: true
     </a></td>
   </tr>
   </table>
-  <table style="background-color: transparent; border-collapse: collapse; border: none; width: 100%;">
+  <table style="background-color: transparent; border: none; width: 100%;">
   <tr style="padding: 100px 0;">
     <td style="width: 100%;border: none;padding-bottom: 20px;padding-top: 20px;"><code   style="background-color: #eee;
       border: 1px solid #999;
       display: block;
-      font-size:10px;">
+      font-size:10px;
+      padding: 10px;">
     g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
       stat_summary(fun = mean, geom = "point", size = 5)+<br>
       geom_vline(aes(xintercept=world_avg, colour="grey"))+<br>
