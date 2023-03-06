@@ -17,6 +17,9 @@ main:
         
   - title: "Data analytics"
     url: /data-analytics/
+
+  - title: "Enhancement"
+    url: /enhancement/
     
   - title: "CV"
     url: /files/Oliver_Hagger_CV.pdf
