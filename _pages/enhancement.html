@@ -55,7 +55,7 @@ input {
   display: flex;
   align-items: right;
   margin-bottom: 10px;
-  width: 50%;
+  width: -50%;
   text-align: right;
 }
 
@@ -91,9 +91,9 @@ input {
       margin-bottom: 20px;
     }
 
-table{
-    margin: 0 auto;
-    width: 50%;
+table {
+  margin: 30px auto 0;
+  width: 50%;
 }
   </style>
 </head>
@@ -158,7 +158,7 @@ function calculate() {
   const c = document.getElementById("input-c").value;
   const d = document.getElementById("input-d").value;
   const result = (a / b) * (c / d);
-  document.getElementById("output").textContent = result;
+  document.getElementById("output").textContent = 'Enhancement factor' + result;
 }
 
 document.getElementById("input-a").addEventListener("input", function() {
