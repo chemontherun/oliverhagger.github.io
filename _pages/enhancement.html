@@ -79,32 +79,49 @@ input {
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="equation">
-      <span id="variable-a">a</span>
-      <span>/</span>
-      <span id="variable-b">b</span>
-      <span>&times;</span>
-      <span id="variable-c">c</span>
-      <span>/</span>
-      <span id="variable-d">d</span>
-    </div>
-    <div class="box">
-      <label for="input-a">Enter a:</label>
-      <input type="number" id="input-a" placeholder="Enter a" oninput="updateEquation('variable-a', this.value)">
-      <span>/</span>
-      <label for="input-b">Enter b:</label>
-      <input type="number" id="input-b" placeholder="Enter b" oninput="updateEquation('variable-b', this.value)">
-      <span>&times;</span>
-      <label for="input-c">Enter c:</label>
-      <input type="number" id="input-c" placeholder="Enter c" oninput="updateEquation('variable-c', this.value)">
-      <span>/</span>
-      <label for="input-d">Enter d:</label>
-      <input type="number" id="input-d" placeholder="Enter d" oninput="updateEquation('variable-d', this.value)">
-      <button onclick="calculate()">Calculate</button>
-      <p id="output"></p>
-    </div>
-  </div>
+    <table>
+        <tr>
+          <th>Equation</th>
+          <td>
+            <span id="variable-a">a</span>
+            <span>/</span>
+            <span id="variable-b">b</span>
+            <span>&times;</span>
+            <span id="variable-c">c</span>
+            <span>/</span>
+            <span id="variable-d">d</span>
+          </td>
+        </tr>
+        <tr>
+          <th>Input Values</th>
+          <td>
+            <label for="input-a">Enter a:</label>
+            <input type="number" id="input-a" placeholder="Enter a" oninput="updateEquation('variable-a', this.value)">
+            <span>/</span>
+            <label for="input-b">Enter b:</label>
+            <input type="number" id="input-b" placeholder="Enter b" oninput="updateEquation('variable-b', this.value)">
+            <span>&times;</span>
+            <label for="input-c">Enter c:</label>
+            <input type="number" id="input-c" placeholder="Enter c" oninput="updateEquation('variable-c', this.value)">
+            <span>/</span>
+            <label for="input-d">Enter d:</label>
+            <input type="number" id="input-d" placeholder="Enter d" oninput="updateEquation('variable-d', this.value)">
+          </td>
+        </tr>
+        <tr>
+          <th>Action</th>
+          <td>
+            <button onclick="calculate()">Calculate</button>
+          </td>
+        </tr>
+        <tr>
+          <th>Result</th>
+          <td>
+            <p id="output"></p>
+          </td>
+        </tr>
+      </table>
+      
 
   <script>
     
