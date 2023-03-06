@@ -50,6 +50,16 @@ input {
   text-align: right;
 }
 
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  margin-right: 10px;
+}
+
     button {
       background-color: #4CAF50;
       color: #fff;
@@ -95,17 +105,22 @@ input {
         <tr>
           <th>Input Values</th>
           <td>
-            <label for="input-a">Enter a:</label>
-            <input type="number" id="input-a" placeholder="Enter a" oninput="updateEquation('variable-a', this.value)">
-            <span>/</span>
-            <label for="input-b">Enter b:</label>
-            <input type="number" id="input-b" placeholder="Enter b" oninput="updateEquation('variable-b', this.value)">
-            <span>&times;</span>
-            <label for="input-c">Enter c:</label>
-            <input type="number" id="input-c" placeholder="Enter c" oninput="updateEquation('variable-c', this.value)">
-            <span>/</span>
-            <label for="input-d">Enter d:</label>
-            <input type="number" id="input-d" placeholder="Enter d" oninput="updateEquation('variable-d', this.value)">
+            <div class="input-group">
+              <label for="input-a">Enter a:</label>
+              <input type="number" id="input-a" placeholder="Enter a" oninput="updateEquation('variable-a', this.value)">
+            </div>
+            <div class="input-group">
+              <label for="input-b">Enter b:</label>
+              <input type="number" id="input-b" placeholder="Enter b" oninput="updateEquation('variable-b', this.value)">
+            </div>
+            <div class="input-group">
+              <label for="input-c">Enter c:</label>
+              <input type="number" id="input-c" placeholder="Enter c" oninput="updateEquation('variable-c', this.value)">
+            </div>
+            <div class="input-group">
+              <label for="input-d">Enter d:</label>
+              <input type="number" id="input-d" placeholder="Enter d" oninput="updateEquation('variable-d', this.value)">
+            </div>
           </td>
         </tr>
         <tr>
@@ -121,6 +136,7 @@ input {
           </td>
         </tr>
       </table>
+      
       
 
   <script>
