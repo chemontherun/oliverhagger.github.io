@@ -1,0 +1,143 @@
+---
+layout: archive
+title: "Enhancement"
+permalink: /enhancement/
+author_profile: true
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 100px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+
+    input {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      flex: 1;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3e8e41;
+    }
+
+    #output {
+      margin-left: 10px;
+      font-size: 18px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .equation {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+   <h1>Length Converter</h1>
+  <div class="container">
+    <div class="equation">
+      <span id="variable-a">a</span>
+      <span>/</span>
+      <span id="variable-b">b</span>
+      <span>&times;</span>
+      <span id="variable-c">c</span>
+      <span>/</span>
+      <span id="variable-d">d</span>
+    </div>
+    <div class="box">
+      <label for="input-a">Enter a:</label>
+      <input type="number" id="input-a" placeholder="Enter a" oninput="updateEquation('variable-a', this.value)">
+      <span>/</span>
+      <label for="input-b">Enter b:</label>
+      <input type="number" id="input-b" placeholder="Enter b" oninput="updateEquation('variable-b', this.value)">
+      <span>&times;</span>
+      <label for="input-c">Enter c:</label>
+      <input type="number" id="input-c" placeholder="Enter c" oninput="updateEquation('variable-c', this.value)">
+      <span>/</span>
+      <label for="input-d">Enter d:</label>
+      <input type="number" id="input-d" placeholder="Enter d" oninput="updateEquation('variable-d', this.value)">
+      <button onclick="calculate()">Calculate</button>
+      <p id="output"></p>
+    </div>
+  </div>
+
+  <script>
+    
+  function updateEquation(variable, value) {
+   document.getElementById(variable).textContent = value || '';
+  }
+
+
+function calculate() {
+  const a = document.getElementById("input-a").value;
+  const b = document.getElementById("input-b").value;
+  const c = document.getElementById("input-c").value;
+  const d = document.getElementById("input-d").value;
+  const result = (a / b) * (c / d);
+  document.getElementById("output").textContent = result;
+}
+
+document.getElementById("input-a").addEventListener("input", function() {
+  updateEquation("variable-a", this.value);
+});
+
+document.getElementById("input-b").addEventListener("input", function() {
+  updateEquation("variable-b", this.value);
+});
+
+document.getElementById("input-c").addEventListener("input", function() {
+  updateEquation("variable-c", this.value);
+});
+
+document.getElementById("input-d").addEventListener("input", function() {
+  updateEquation("variable-d", this.value);
+});
+
+  </script>
+</body>
+</html>
