@@ -105,7 +105,7 @@ table {
 
 
       
-<table>
+<!-- <table>
 
     <tr>
         <!-- <td colspan="2" style="text-align: center; font-size: 24px;">
@@ -117,7 +117,7 @@ table {
             <span>/</span>
             <span id="variable-d">d</span>
         </td> -->
-        <td id="variable-a">a</td>
+        
         <!-- <td style="text-align: center; font-size: 24px;"> -->
             <!-- <div>
                 <span id="variable-a" style="display:block;">a</span>
@@ -130,13 +130,11 @@ table {
                 <span id="variable-c" style="display:block;">c</span>
                 <span id="variable-d" style="display:block;">/ d</span>
             </div> -->
-        
-        <td rowspan="2">x
-          
-        </td>
-        <td id="variable-c">
-          c
-        </td>
+  <!-- <table>
+    <tr>        
+        <td id="variable-a">a</td>
+        <td rowspan="2">x</td>
+        <td id="variable-c">c</td>
   
     </tr>
     <tr>
@@ -170,7 +168,49 @@ table {
         </td>
     </tr>
 
-</table> 
+</table>   -->
+
+<table style="width: 100%; text-align: center;">
+  <tr>
+    <td style="text-align: right;" id="variable-a">a</td>
+    <td rowspan="2" style="vertical-align: middle; text-align: center;">x</td>
+    <td style="text-align: left;" id="variable-c">c</td>
+  </tr>
+  <tr>
+    <td style="text-align: right;" id="variable-b">b</td>
+    <td style="text-align: left;" id="variable-d">d</td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align: center; font-size: 24px;">/</td>
+  </tr>
+  <tr>
+    <td><label for="input-a">Enter a:</label></td>
+    <td colspan="2"><input type="number" id="input-a" placeholder="Enter a" oninput="updateEquation('variable-a', this.value)"></td>
+  </tr>
+  <tr>
+    <td><label for="input-b">Enter b:</label></td>
+    <td colspan="2"><input type="number" id="input-b" placeholder="Enter b" oninput="updateEquation('variable-b', this.value)"></td>
+  </tr>
+  <tr>
+    <td><label for="input-c">Enter c:</label></td>
+    <td colspan="2"><input type="number" id="input-c" placeholder="Enter c" oninput="updateEquation('variable-c', this.value)"></td>
+  </tr>
+  <tr>
+    <td><label for="input-d">Enter d:</label></td>
+    <td colspan="2"><input type="number" id="input-d" placeholder="Enter d" oninput="updateEquation('variable-d', this.value)" style="text-align: right;"></td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align: center;">
+      <button onclick="calculate()">Calculate</button>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align: center;">
+      <p id="output"></p>
+    </td>
+  </tr>
+</table>
+
       
       
 
