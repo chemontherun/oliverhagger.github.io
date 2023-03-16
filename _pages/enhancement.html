@@ -172,14 +172,19 @@ table {
 
 <table style="width: 60%; text-align: center;">
   <tr>
-    <td style="text-align: right;width: 33.333%;" id="variable-a">a</td>
-    <td rowspan="2" style="vertical-align: middle; text-align: center;width: 33.333%;">x</td>
-    <td style="text-align: left;width: 33.333%;" id="variable-c">c</td>
+    <td style="text-align: center;" id="variable-a">
+      <math>
+        C <box>dV<sub>out</sub><over>dt</box> = I<sub>b</sub>
+        &tanh;(<box>κ(V<sub>in</sub>-V<sub>out</sub>)<over>2</box>)
+      </math>
+    </td>
+    <!-- <td rowspan="2" style="vertical-align: middle; text-align: center;width: 33.333%;">x</td>
+    <td style="text-align: left;width: 33.333%;" id="variable-c">c</td> -->
   </tr>
-  <tr>
+  <!-- <tr>
     <td style="text-align: right;width: 33.333%;" id="variable-b">b</td>
     <td style="text-align: left;width: 33.333%;" id="variable-d">d</td>
-  </tr>
+  </tr> -->
   <tr>
     <td><label for="input-a">Enter a:</label></td>
     <td colspan="2"><input type="number" id="input-a" placeholder="Enter a" oninput="updateEquation('variable-a', this.value)"></td>
