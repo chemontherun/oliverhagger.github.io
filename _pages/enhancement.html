@@ -111,8 +111,8 @@ table {
       <td colspan="2" style="width: 200px; text-align: center; padding-bottom: 50px; padding-top: 40px; border: 0; vertical-align: middle;">
         <math style="font-size: 50px;">
           <mfrac style="font-size: 50px;">
-            <mi id="variable-a" style="font-size: 50px;text-align: right;">I <sub> SERS</sub></mi>
-            <mi id="variable-b" style="font-size: 50px;text-align: right;">I<sub>Raman</sub></mi>
+            <mi id="variable-a" style="font-size: 50px;text-align: right;">I_SERS</mi>
+            <mi id="variable-b" style="font-size: 50px;text-align: right;">I_Raman</mi>
           </mfrac>
           <mo style="font-size: 50px;">&#xD7;</mo>
           <mfrac style="font-size: 49.99px;">
@@ -183,6 +183,7 @@ Note that the SERS enhancement factor is a relative measure of the enhancement o
 <style>
   p {
     margin-bottom: 1.5em;
+    text-justify: auto;
   }
   ul {
     margin: 0;
@@ -193,15 +194,21 @@ Note that the SERS enhancement factor is a relative measure of the enhancement o
   li {
     margin-bottom: 0.5em;
   }
+  .equation {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0;
+    font-size: 1.2em;
+  }
 </style>
 
 <p>Surface Enhanced Raman Scattering (SERS) is a technique used to enhance the Raman scattering signal of molecules adsorbed on metallic surfaces or nanoparticles. It has been widely used for chemical and biological sensing due to its high sensitivity and selectivity. SERS enhancement factor (EF) is a quantitative measure of the enhancement of the Raman scattering signal due to SERS. EF is defined as the ratio of the Raman scattering intensity of a molecule on a SERS substrate to that of the same molecule on a non-enhancing substrate. The EF can be as high as 10^14, making SERS a highly sensitive technique.</p>
 
 <p>The SERS enhancement factor (EF) can be calculated using the following formula:</p>
 
-<ul>
-  <li>EF = (I<sub>SERS</sub> / I<sub>Raman</sub>) * (Conc<sub>Raman</sub> / Conc<sub>SERS</sub>)</li>
-</ul>
+<div class="equation">
+  EF = (I<sub>SERS</sub> / I<sub>Raman</sub>) * (Conc<sub>Raman</sub> / Conc<sub>SERS</sub>)
+</div>
 
 <p>where:</p>
 
