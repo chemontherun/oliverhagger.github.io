@@ -111,8 +111,8 @@ table {
       <td colspan="2" style="width: 200px; text-align: center; padding-bottom: 50px; padding-top: 40px; border: 0; vertical-align: middle;">
         <math style="font-size: 50px;">
           <mfrac style="font-size: 50px;">
-            <mi id="variable-a" style="font-size: 50px;text-align: right;">I_SERS</mi>
-            <mi id="variable-b" style="font-size: 50px;text-align: right;">I_Raman</mi>
+            <mi id="variable-a" style="font-size: 50px;text-align: right;">I <sub> SERS</sub></mi>
+            <mi id="variable-b" style="font-size: 50px;text-align: right;">I<sub>Raman</sub></mi>
           </mfrac>
           <mo style="font-size: 50px;">&#xD7;</mo>
           <mfrac style="font-size: 49.99px;">
@@ -200,23 +200,24 @@ Note that the SERS enhancement factor is a relative measure of the enhancement o
 <p>The SERS enhancement factor (EF) can be calculated using the following formula:</p>
 
 <ul>
-  <li>EF = (I<sub>SERS</sub> / N<sub>SERS</sub>) / (I<sub>RS</sub> / N<sub>RS</sub>)</li>
+  <li>EF = (I<sub>SERS</sub> / I<sub>Raman</sub>) * (Conc<sub>Raman</sub> / Conc<sub>SERS</sub>)</li>
 </ul>
 
 <p>where:</p>
 
 <ul>
-  <li>I<sub>SERS</sub>: the intensity of the Raman scattering signal of a molecule on the SERS substrate</li>
-  <li>N<sub>SERS</sub>: the number of molecules adsorbed on the SERS substrate</li>
-  <li>I<sub>RS</sub>: the intensity of the Raman scattering signal of a molecule on a non-enhancing substrate</li>
-  <li>N<sub>RS</sub>: the number of molecules adsorbed on the non-enhancing substrate</li>
+  <li>I<sub>SERS</sub>: This is the intensity of the Raman scattering signal of the molecule on the SERS substrate. To measure this, you would typically perform a Raman spectroscopy experiment on the molecule when it is adsorbed on the SERS substrate. The intensity is a measure of the strength of the Raman scattering signal and can be quantified in units such as counts per second or milliwatts per square centimeter.</li>
+  <li>I<sub>Raman</sub>: This is the intensity of the Raman scattering signal of the molecule on a non-enhancing substrate. This could be a flat piece of glass or a silicon wafer, for example. The measurement is performed in the same way as for the SERS substrate, by performing a Raman spectroscopy experiment on the molecule when it is adsorbed on the non-enhancing substrate.</li>
+  <li>Conc<sub>Raman</sub>: This is the number of molecules adsorbed on the non-enhancing substrate. This would be calculated in the same way as N_SERS, by measuring the amount of the molecule that you are adding to the substrate and calculating the number of molecules based on its molecular weight and the surface area of the substrate.</li>
+  <li>Conc<sub>SERS</sub>: This is the number of molecules adsorbed on the SERS substrate. To calculate this, you would typically weigh or measure the amount of the molecule that you are adding to the SERS substrate and calculate the number of molecules based on its molecular weight and the surface area of the substrate.</li>
 </ul>
 
 <p>To calculate the EF using this formula, you need to measure the Raman scattering signal of a molecule on a SERS substrate and a non-enhancing substrate and count the number of molecules adsorbed on each substrate.</p>
 
 <p>There are several factors that can affect the SERS enhancement factor, including the size, shape, and composition of the SERS substrate, the excitation wavelength, and the type of molecule being analyzed.</p>
 
-<p>In terms of a calculator, you can create a program or a spreadsheet to calculate the SERS enhancement factor based on the above formula. The calculator can be customized to take into account the specific properties of the SERS substrate and the molecule being analyzed. It can also be designed to provide recommendations for optimizing the SERS experiment to achieve the highest possible enhancement factor.</p>
+<p>Note that the SERS enhancement factor is a relative measure of the enhancement of the Raman scattering signal. It compares the signal strength on a SERS substrate to that on a non-enhancing substrate, so it is important to ensure that the measurement conditions are as similar as possible for both substrates. This can be achieved by using the same type of laser excitation and instrument settings, for example.</p>
+
 
 
       
