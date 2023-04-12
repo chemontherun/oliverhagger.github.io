@@ -52,7 +52,7 @@ author_profile: true
 
       <p>RMarkdown file used for plotting</p>
       
-      <a href="/files/Rmarkdown-for-student-to-teacher-ratio.pdf" target="_blank" rel="noopener noreferrer">Markdown file</a><br/>
+      <a href="/files/R_markdown_space_missions.html" target="_blank" rel="noopener noreferrer">Markdown file</a><br/>
       
       <p>Main chunk of code used for graph plotting</p></td>
     <td style="border: none; font-size: 20px;padding-left: 40px;padding-top: 20px;"><a href="/images/space_missions_illustration.png" target="_blank" width="300" height="200">
@@ -68,13 +68,25 @@ author_profile: true
       display: block;
       font-size:10px;
       padding: 10px;">
-    g_text <- g + geom_jitter(size = 4, alpha = 0.25,height = 0.2)+
-      stat_summary(fun = mean, geom = "point", size = 5)+<br>
-      geom_vline(aes(xintercept=world_avg, colour="grey"))+<br>
-      geom_segment(
-        aes(y = region, yend = region,
-          x = world_avg, xend = student_ratio_region),
-        size = 0.8)
+    Space_missions %>%
+    filter(country %in% c("USA", "Russian Federation", "China")) %>%
+    group_by(country, Company.Name) %>%
+    summarise(n = n()) %>%
+    group_by(country) %>%
+    summarise(total = sum(n)) %>%
+    top_n(5, total) %>%
+    inner_join(Space_missions, by = "country") %>%
+    group_by(country, Company.Name) %>%
+    summarise(n = n()) %>%
+    ggplot(aes(x = reorder(Company.Name, n), y = n, fill = n > 150)) +
+    geom_col() +
+    geom_text(aes(label = n), vjust = -0.5, size = 3) +
+    facet_wrap(~country, ncol = 2, scales = "free_x") +
+    scale_fill_manual(values = c("FALSE" = "white", "TRUE" = "red")) +
+    theme(
+      panel.background = element_rect(fill = "gray95", colour = NA)
+    ) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
     
     
     </code></td>
