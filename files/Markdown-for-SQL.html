@@ -13,7 +13,7 @@
 
 <meta name="date" content="2023-04-18" />
 
-<title>BikeStores_SQlQuery</title>
+<title>Bike Stores SQL Query</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -363,7 +363,7 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">BikeStores_SQlQuery</h1>
+<h1 class="title toc-ignore">Bike Stores SQL Query</h1>
 <h4 class="author">Oliver Hagger</h4>
 <h4 class="date">2023-04-18</h4>
 
@@ -372,6 +372,8 @@ pre code {
 
 <pre class="r"><code>#install.packages(&quot;DBI&quot;)
 library(DBI)</code></pre>
+<div id="set-up-the-connection" class="section level2">
+<h2>Set up the connection</h2>
 <pre class="r"><code># Set up the ODBC connection
 library(DBI)
 library(odbc)
@@ -383,19 +385,9 @@ con &lt;- dbConnect(odbc(),
 
 # Test the connection
 #dbListTables(con)</code></pre>
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting
-syntax for authoring HTML, PDF, and MS Word documents. For more details
-on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be
-generated that includes both content as well as the output of any
-embedded R code chunks within the document. You can embed an R code
-chunk like this:</p>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example</p>
+<div id="sql-queries" class="section level2">
+<h2>SQL Queries</h2>
 <pre class="r"><code># Run the SQL query and store the result in a data frame
 query_result &lt;- dbGetQuery(con, &quot;SELECT 
     ord.order_id,
