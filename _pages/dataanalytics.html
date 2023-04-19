@@ -78,38 +78,36 @@ author_profile: true
   </tr>
   </table>
   <table style="background-color: transparent; border: none; width: 100%;">
-  <tr style="padding: 100px 0;">
-    <td style="width: 100%;border: none;padding-bottom: 20px;">
-    <code   style="background-color: #eee;
-      border: 1px solid #999;
-      display: block;
-      font-size:10px;
-      padding: 10px;">
-    Space_missions %>%
-    filter(country %in% c("USA", "Russian Federation", "China")) %>%
-    group_by(country, Company.Name) %>%
-    summarise(n = n()) %>%
-    group_by(country) %>%
-    summarise(total = sum(n)) %>%
-    top_n(5, total) %>%
-    inner_join(Space_missions, by = "country") %>%
-    group_by(country, Company.Name) %>%
-    summarise(n = n()) %>%
-    ggplot(aes(x = reorder(Company.Name, n), y = n, fill = n > 150)) +
-    geom_col() +
-    geom_text(aes(label = n), vjust = -0.5, size = 3) +
-    facet_wrap(~country, ncol = 2, scales = "free_x") +
-    scale_fill_manual(values = c("FALSE" = "white", "TRUE" = "red")) +
-    theme(
-      panel.background = element_rect(fill = "gray95", colour = NA)
-    ) +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1))
-    
-    
-    </code></td>
-  </tr>
-
-</table>
+    <tr style="padding: 100px 0;">
+      <td style="width: 100%;border: none;">
+      <code   style="background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        font-size:15px;
+        padding: 10px;">
+        <cod style="font-size: 20px;"><b><u>Quesitons and Conclusions</u></b></cod>
+        
+        <style>
+          ol ul {
+           list-style-type: none;
+          }
+        </style>
+        <ol style="padding-bottom: 0;">
+          <li>hello
+            <ul>
+              <li>- subitem 1</li>
+              <li>- subitem 2</li>
+              <li>- subitem 3</li>
+            </ul>
+          </li>
+          <li>bye</li>
+          <li>welcome</li>
+        </ol>
+      </code>
+    </td>
+    </tr>
+  
+  </table>
 
 <hr>
 
@@ -132,27 +130,36 @@ author_profile: true
   </tr>
   </table>
   <table style="background-color: transparent; border: none; width: 100%;">
-  <tr style="padding: 100px 0;">
-    <td style="width: 100%;border: none;padding-bottom: 20px;">
-    <code   style="background-color: #eee;
-      border: 1px solid #999;
-      display: block;
-      font-size:10px;
-      padding: 10px;">
-all_data_2 %>% 
-mutate(weekday = wday(started_at, label = TRUE)) %>% 
-group_by(member_casual, weekday) %>% 
-summarise(number_of_rides = n()
-          ,average_duration = mean(ride_length)) %>% 
-arrange(member_casual, weekday)  %>% 
-ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
-geom_col(position = "dodge")
-    
-    
-    </code></td>
-  </tr>
-
-</table>
+    <tr style="padding: 100px 0;">
+      <td style="width: 100%;border: none;">
+      <code   style="background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        font-size:15px;
+        padding: 10px;">
+        <cod style="font-size: 20px;"><b><u>Quesitons and Conclusions</u></b></cod>
+        
+        <style>
+          ol ul {
+           list-style-type: none;
+          }
+        </style>
+        <ol style="padding-bottom: 0;">
+          <li>hello
+            <ul>
+              <li>- subitem 1</li>
+              <li>- subitem 2</li>
+              <li>- subitem 3</li>
+            </ul>
+          </li>
+          <li>bye</li>
+          <li>welcome</li>
+        </ol>
+      </code>
+    </td>
+    </tr>
+  
+  </table>
 
 <hr>
 
@@ -174,26 +181,35 @@ geom_col(position = "dodge")
   </tr>
   </table>
   <table style="background-color: transparent; border: none; width: 100%;">
-  <tr style="padding: 100px 0;">
-    <td style="width: 100%;border: none;padding-bottom: 20px;">
-    <code   style="background-color: #eee;
-      border: 1px solid #999;
-      display: block;
-      font-size:10px;
-      padding: 10px;">
-all_data_2 %>% 
-mutate(weekday = wday(started_at, label = TRUE)) %>% 
-group_by(member_casual, weekday) %>% 
-summarise(number_of_rides = n()
-          ,average_duration = mean(ride_length)) %>% 
-arrange(member_casual, weekday)  %>% 
-ggplot(aes(x = weekday, y = average_duration, fill = member_casual)) +
-geom_col(position = "dodge")
-    
-    
-    </code></td>
-  </tr>
-
-</table>
+    <tr style="padding: 100px 0;">
+      <td style="width: 100%;border: none;">
+      <code   style="background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        font-size:15px;
+        padding: 10px;">
+        <cod style="font-size: 20px;"><b><u>Quesitons and Conclusions</u></b></cod>
+        
+        <style>
+          ol ul {
+           list-style-type: none;
+          }
+        </style>
+        <ol style="padding-bottom: 0;">
+          <li>hello
+            <ul>
+              <li>- subitem 1</li>
+              <li>- subitem 2</li>
+              <li>- subitem 3</li>
+            </ul>
+          </li>
+          <li>bye</li>
+          <li>welcome</li>
+        </ol>
+      </code>
+    </td>
+    </tr>
+  
+  </table>
 
 <hr>
