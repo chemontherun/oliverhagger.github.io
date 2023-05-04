@@ -8,7 +8,7 @@ date: 2021-04-08
 location: "London, UK"
 ---
 
-Analytical chemistry masters course, in which I helped students with problems they were facing. 
+As a teaching assistant for an Analytical Chemistry Master's program, I provided invaluable support to students by offering practical solutions to the challenges they encountered in their coursework.
 
 <img src="/images/IMG_0097.jpg" class="img" alt="Arduino work" width="400" height="200" style='border:1px solid #000000;'/>
 <br>
