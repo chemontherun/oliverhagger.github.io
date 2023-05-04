@@ -41,8 +41,8 @@ Posts
 
 <br>
 
-Fusion 360 research designs
-<img src="/images/plasma jet design fusion.png" alt="My test image" />
+<!-- Fusion 360 research designs
+<img src="/images/plasma jet design fusion.png" alt="My test image" /> -->
 
 
 
