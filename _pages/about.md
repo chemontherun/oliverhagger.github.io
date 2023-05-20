@@ -31,13 +31,22 @@ I am a PhD student at University College London (UCL) under the supervision of P
 Posts
 ------
 
-<div style="position:relative;overflow:hidden;padding-top:56.25%;">
+<!-- <div style="position:relative;overflow:hidden;padding-top:56.25%;">
+  <iframe 
+   frameborder="0"
+   style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+   src="https://www.linkedin.com/embed/feed/update/urn:li:share:7059209412615229440"
+  ></iframe>
+</div> -->
+
+<div style="position:relative;overflow:hidden;">
   <iframe 
    frameborder="0"
    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
    src="https://www.linkedin.com/embed/feed/update/urn:li:share:7059209412615229440"
   ></iframe>
 </div>
+
 
 <br>
 
