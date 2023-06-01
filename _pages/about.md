@@ -40,12 +40,15 @@ Posts
 
 
   
-  <div class="linkedin-post">
-    <script src="https://platform.linkedin.com/in.js" type="text/javascript">
-      lang: en_US
-    </script>
-    <script type="IN/EmbeddedPost" data-id="7069588614602510336" data-width="500"></script>
-  </div>
+<div style="position:relative;overflow:hidden;padding-top:0;">
+  <iframe 
+   frameborder="0"
+   style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+   src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069588614602510336"
+   height="100%"
+  ></iframe>
+</div>
+s
   
 
 <br>
