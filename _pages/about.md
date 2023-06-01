@@ -39,6 +39,14 @@ Posts
 </div>
 
 
+  
+  <div class="linkedin-post">
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">
+      lang: en_US
+    </script>
+    <script type="IN/EmbeddedPost" data-id="7069588614602510336" data-width="500"></script>
+  </div>
+  
 
 <br>
 
