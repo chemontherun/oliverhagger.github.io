@@ -10,9 +10,9 @@ author_profile: true
   <tr style="padding: 100px 0;">
   <td style="width: 50%; border: none;padding-top: 10px;font-size: 20px;">
   
-  <h1>Rapid single step atmospheric pressure plasma jet deposition of a SERS active surface</h1>
-  <h3>Hagger, O. S. J., et al., Mater. Adv., 2023, Advance Article</h3>
-  <h3>Link to article: <a href= "https://doi.org/10.1039/D3MA00249G">Advance Materials</a></h3>
+  <h2><b>Rapid single step atmospheric pressure plasma jet deposition of a SERS active surface</b></h2>
+  <h4><i>Hagger, O. S. J., et al., Mater. Adv., 2023, Advance Article</i></h4>
+  <h4><i>Link to article: <a href= "https://doi.org/10.1039/D3MA00249G">https://doi.org/10.1039/D3MA00249G</a></i></h4>
   
   
   </td>
