@@ -8,7 +8,7 @@ author_profile: true
 
 <table style="background-color: transparent; border-collapse: collapse; border: none; width: 100%;border-spacing: 0 150px;">
   <tr style="padding: 100px 0;">
-  <td style="width: 50%; border: none;padding-top: 10px;font-size: 20px;">
+  <td style="width: 75%; border: none;padding-top: 10px;font-size: 20px;">
   
   <h2><b>Rapid single step atmospheric pressure plasma jet deposition of a SERS active surface</b></h2>
   <h4><i>Hagger, O. S. J., et al., Mater. Adv., 2023, Advance Article</i></h4>
