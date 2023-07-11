@@ -11,8 +11,8 @@ author_profile: true
   <td style="width: 75%; border: none;padding-top: 10px;font-size: 20px;">
   
   <h2><b>Rapid single step atmospheric pressure plasma jet deposition of a SERS active surface</b></h2>
-  <h4><i>Hagger, O. S. J., et al., Mater. Adv., 2023, Advance Article</i></h4>
-  <h4><i>Link to article: <a href= "https://doi.org/10.1039/D3MA00249G">https://doi.org/10.1039/D3MA00249G</a></i></h4>
+  <p style ="line-height:150%"><h4><i>Hagger, O. S. J., et al., Mater. Adv., 2023, Advance Article</i></h4>
+  <h4><i>Link to article: <a href= "https://doi.org/10.1039/D3MA00249G">https://doi.org/10.1039/D3MA00249G</a></i></h4></p>
   
   
   </td>
@@ -23,6 +23,7 @@ author_profile: true
 
 
 </table>
+<hr>
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
