@@ -35,7 +35,7 @@ Posts
   <iframe 
    frameborder="0"
    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-   src="https://www.linkedin.com/feed/update/urn:li:activity:7084460896067973121/"
+   src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346"
   ></iframe>
 </div>
 
