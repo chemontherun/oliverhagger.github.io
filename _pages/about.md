@@ -31,6 +31,52 @@ I am a PhD student at University College London (UCL) under the supervision of P
 Posts
 ------
 
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+  .iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+    height: 100%;
+  }
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="fullscreen-container">
+  <div class="iframe-wrapper">
+    <iframe class="responsive-iframe"
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
 <div style="position:relative;overflow:hidden;padding-top:56.25%;">
   <iframe 
    frameborder="0"
