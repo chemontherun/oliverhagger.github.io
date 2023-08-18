@@ -40,15 +40,15 @@ Posts
 
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069588614602510336" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069588614602510336" height="800" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7059209412615229440" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7059209412615229440" height="800" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7011689248927932416" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7011689248927932416" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 
