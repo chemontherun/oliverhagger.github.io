@@ -33,11 +33,35 @@ I am a PhD student at University College London (UCL) under the supervision of P
 Posts
 ------
 
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  gap: 20px; /* Adjust the gap between posts */
+}
 
+.post-container {
+  width: 50%; /* Each post takes 50% width to show two side by side */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+
+<div class="container">
+  <div class="post-container">
+    <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="650" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  </div>
+  <div class="post-container">
+    <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="650" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  </div>
+</div>
 
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="650" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="100%" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 
