@@ -48,7 +48,7 @@ Posts
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7011689248927932416" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7011689248927932416" height="850" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 
@@ -85,3 +85,8 @@ Posts
 
 
 <blockquote style="display: flex; justify-content: center; align-items: center;" class="twitter-tweet"><p lang="en" dir="ltr">Hello everyone. I am a first year PhD student at UCL, researching SERS sensing using plasma jets, looking to network and connect with fellow chemists around the world! <a href="https://twitter.com/hashtag/chemtwitter?src=hash&amp;ref_src=twsrc%5Etfw">#chemtwitter</a> <a href="https://twitter.com/hashtag/academicchatter?src=hash&amp;ref_src=twsrc%5Etfw">#academicchatter</a> <a href="https://twitter.com/hashtag/RealTimeChem?src=hash&amp;ref_src=twsrc%5Etfw">#RealTimeChem</a></p>&mdash; Ollie Hagger (@olliechem) <a href="https://twitter.com/olliechem/status/1447940362962718723?ref_src=twsrc%5Etfw">October 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hello everyone. I am a first year PhD student at UCL, researching SERS sensing using plasma jets, looking to network and connect with fellow chemists around the world! <a href="https://twitter.com/hashtag/chemtwitter?src=hash&amp;ref_src=twsrc%5Etfw">#chemtwitter</a> <a href="https://twitter.com/hashtag/academicchatter?src=hash&amp;ref_src=twsrc%5Etfw">#academicchatter</a> <a href="https://twitter.com/hashtag/RealTimeChem?src=hash&amp;ref_src=twsrc%5Etfw">#RealTimeChem</a></p>&mdash; Ollie Hagger (@olliechem) <a href="https://twitter.com/olliechem/status/1447940362962718723?ref_src=twsrc%5Etfw">October 12, 2021</a></blockquote>
+</div>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
