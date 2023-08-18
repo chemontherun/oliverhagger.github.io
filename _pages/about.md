@@ -39,7 +39,7 @@ Posts
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
-  gap: 20px; /* Adjust the gap between posts */
+  gap: 50px; /* Adjust the gap between posts */
 }
 
 .post-container {
@@ -52,10 +52,10 @@ Posts
 
 <div class="container">
   <div class="post-container">
-    <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="650" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+    <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
   </div>
   <div class="post-container">
-    <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="650" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+    <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069588614602510336" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
   </div>
 </div>
 
