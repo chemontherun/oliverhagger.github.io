@@ -18,7 +18,7 @@ redirect_from:
   gtag('config', 'G-WR1GZF8FM6');
 </script>
 
-import { LinkedInEmbed } from 'react-social-media-embed';
+
 
 Welcome to my personal website
 ------
@@ -37,7 +37,7 @@ Posts
 
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="750" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="650" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 
