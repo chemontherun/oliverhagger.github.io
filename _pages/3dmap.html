@@ -27,70 +27,71 @@ author_profile: true
     </style>
 </head>
 <body>
-    <form id="upload-form" enctype="multipart/form-data">
-        <input type="file" id="file-input" name="file" accept=".stl" multiple>
-        <button type="submit">Upload</button>
-    </form>
+  <form id="upload-form" enctype="multipart/form-data">
+    <input type="file" id="file-input" name="file" accept=".stl" multiple>
+    <button type="submit">Upload</button>
+  </form>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/STLLoader.min.js"></script>
-    <script>
-        // Set up Three.js components
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
+  <script src="/assets/js/three.min.js"></script>
+  <script src="/assets/js/STLLoader.min.js"></script>
+  <script>
+    // Set up Three.js components
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Resize renderer on window resize
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+    });
 
-        // Resize renderer on window resize
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
+    // Set initial camera position
+    camera.position.z = 5;
 
-        // Set initial camera position
-        camera.position.z = 5;
-
-        // Function to render uploaded models
-        function renderUploadedModels(data) {
-            for (const fileName of data.files) {
-                const loader = new THREE.STLLoader();
-                loader.load(`/uploads/${fileName}`, function (geometry) {
-                    const material = new THREE.MeshPhongMaterial({ color: 0xaaaaaa });
-                    const mesh = new THREE.Mesh(geometry, material);
-                    scene.add(mesh);
-                });
-            }
+    // Function to render uploaded models
+    function renderUploadedModels(data) {
+        for (const fileName of data.files) {
+            const loader = new THREE.STLLoader();
+            loader.load(`/uploads/${fileName}`, function (geometry) {
+                const material = new THREE.MeshPhongMaterial({ color: 0xaaaaaa });
+                const mesh = new THREE.Mesh(geometry, material);
+                scene.add(mesh);
+            });
         }
+    }
 
-        // Handle file upload form submission
-        document.getElementById('upload-form').addEventListener('submit', async function(event) {
-            event.preventDefault();
-            const files = document.getElementById('file-input').files;
-            const formData = new FormData();
-            for (const file of files) {
-                formData.append('files', file);
-            }
-            try {
-                const response = await fetch('/upload', {
-                    method: 'POST',
-                    body: formData
-                });
-                const data = await response.json();
-                // Trigger function to render uploaded model(s) in the viewer
-                renderUploadedModels(data);
-            } catch (error) {
-                console.error('Error uploading files:', error);
-            }
-        });
-
-        // Animation loop
-        function animate() {
-            requestAnimationFrame(animate);
-            renderer.render(scene, camera);
+    // Handle file upload form submission
+    document.getElementById('upload-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const files = document.getElementById('file-input').files;
+        const formData = new FormData();
+        for (const file of files) {
+            formData.append('files', file);
         }
-        animate();
-    </script>
+        try {
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            // Trigger function to render uploaded model(s) in the viewer
+            renderUploadedModels(data);
+        } catch (error) {
+            console.error('Error uploading files:', error);
+        }
+    });
+
+    // Animation loop
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+    animate();
+</script>
+
 </body>
 </html>
