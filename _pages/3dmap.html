@@ -36,18 +36,32 @@ author_profile: true
   <script src="/assets/js/STLLoader.min.js"></script>
   <script>
     // Set up Three.js components
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    // Set up Three.js components
+  const scene = new THREE.Scene();
 
-    // Resize renderer on window resize
-    window.addEventListener('resize', () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-    });
+  // Adjust the camera settings
+  const fov = 45; // Field of view in degrees
+  const aspect = window.innerWidth / window.innerHeight; // Aspect ratio
+  const near = 0.1; // Near clipping plane
+  const far = 100; // Far clipping plane
+  const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+  camera.position.z = 20; // Adjust the distance from the scene
+
+  // Adjust the renderer size
+  const rendererWidth = window.innerWidth * 0.8; // Set the width of the renderer to 80% of window width
+  const rendererHeight = window.innerHeight * 0.6; // Set the height of the renderer to 60% of window height
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize(rendererWidth, rendererHeight);
+  document.body.appendChild(renderer.domElement);
+
+  // Resize renderer on window resize
+  window.addEventListener('resize', () => {
+    const width = window.innerWidth * 0.8;
+    const height = window.innerHeight * 0.6;
+    renderer.setSize(width, height);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+  });
 
     // Set initial camera position
     camera.position.z = 5;
