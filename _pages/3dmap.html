@@ -1,15 +1,13 @@
----
-layout: archive
-title: "3D MAP"
+
 permalink: /3dmap/
-author_profile: true
----
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>3D Building Viewer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
     <style>
         body {
             margin: 0;
@@ -18,93 +16,78 @@ author_profile: true
         canvas {
             display: block;
         }
-        #upload-form {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 1;
-        }
     </style>
 </head>
 <body>
-  <form id="upload-form" enctype="multipart/form-data">
-    <input type="file" id="file-input" name="file" accept=".stl" multiple>
-    <button type="submit">Upload</button>
-  </form>
+    <div id="model" style="width: 500px; height: 500px"></div>
 
-  <script src="/assets/js/three.module.js"></script>
-  <script src="/assets/js/STLLoader.js"></script>
-  <script>
+    <script src="/assets/js/three.module.js"></script>
+    <script src="/assets/js/STLLoader.js"></script>
+    <!-- <script src="/examples/js/controls/OrbitControls.js"></script> -->
+  
 
-  const scene = new THREE.Scene();
+    <script>
+        function STLViewer(model, elementID) {
+            var elem = document.getElementById(elementID);
 
-  // Adjust the camera settings
-  const fov = 45; // Field of view in degrees
-  const aspect = window.innerWidth / window.innerHeight; // Aspect ratio
-  const near = 0.1; // Near clipping plane
-  const far = 100; // Far clipping plane
-  const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.z = 20; // Adjust the distance from the scene
+            var camera = new THREE.PerspectiveCamera(70, elem.clientWidth / elem.clientHeight, 1, 1000);
 
-  // Adjust the renderer size
-  const rendererWidth = window.innerWidth * 0.8; // Set the width of the renderer to 80% of window width
-  const rendererHeight = window.innerHeight * 0.6; // Set the height of the renderer to 60% of window height
-  const renderer = new THREE.WebGLRenderer();
-  renderer.setSize(rendererWidth, rendererHeight);
-  document.body.appendChild(renderer.domElement);
+            var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(elem.clientWidth, elem.clientHeight);
+            elem.appendChild(renderer.domElement);
 
-  // Resize renderer on window resize
-  window.addEventListener('resize', () => {
-    const width = window.innerWidth * 0.8;
-    const height = window.innerHeight * 0.6;
-    renderer.setSize(width, height);
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-  });
+            window.addEventListener('resize', function () {
+                renderer.setSize(elem.clientWidth, elem.clientHeight);
+                camera.aspect = elem.clientWidth / elem.clientHeight;
+                camera.updateProjectionMatrix();
+            }, false);
 
-    // Set initial camera position
-    camera.position.z = 5;
+            var controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.rotateSpeed = 0.05;
+            controls.dampingFactor = 0.1;
+            controls.enableZoom = true;
+            controls.autoRotate = true;
+            controls.autoRotateSpeed = .75;
 
-    // Function to render uploaded models
-    function renderUploadedModels(data) {
-        for (const fileName of data.files) {
-            const loader = new THREE.STLLoader();
-            loader.load(`/uploads/${fileName}`, function (geometry) {
-                const material = new THREE.MeshPhongMaterial({ color: 0xaaaaaa });
-                const mesh = new THREE.Mesh(geometry, material);
+            var scene = new THREE.Scene();
+            scene.add(new THREE.HemisphereLight(0xffffff, 1.5));
+
+            (new THREE.STLLoader()).load(model, function (geometry) {
+                var material = new THREE.MeshPhongMaterial({ 
+                    color: 0xff5533, 
+                    specular: 100, 
+                    shininess: 100 
+                });
+                var mesh = new THREE.Mesh(geometry, material);
                 scene.add(mesh);
+
+                var middle = new THREE.Vector3();
+                geometry.computeBoundingBox();
+                geometry.boundingBox.getCenter(middle);
+                mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation( 
+                    -middle.x, -middle.y, -middle.z 
+                ));
+
+                var largestDimension = Math.max(
+                    geometry.boundingBox.max.x,
+                    geometry.boundingBox.max.y, 
+                    geometry.boundingBox.max.z
+                );
+                camera.position.z = largestDimension * 1.5;
+
+                var animate = function () {
+                    requestAnimationFrame(animate);
+                    controls.update();
+                    renderer.render(scene, camera);
+                }; 
+                animate();
             });
         }
-    }
 
-    // Handle file upload form submission
-    document.getElementById('upload-form').addEventListener('submit', async function(event) {
-        event.preventDefault();
-        const files = document.getElementById('file-input').files;
-        const formData = new FormData();
-        for (const file of files) {
-            formData.append('files', file);
-        }
-        try {
-            const response = await fetch('/uploads', {
-                method: 'POST',
-                body: formData
-            });
-            const data = await response.json();
-            // Trigger function to render uploaded model(s) in the viewer
-            renderUploadedModels(data);
-        } catch (error) {
-            console.error('Error uploading files:', error);
-        }
-    });
-
-    // Animation loop
-    function animate() {
-        requestAnimationFrame(animate);
-        renderer.render(scene, camera);
-    }
-    animate();
-</script>
-
+        window.onload = function () {
+            STLViewer("RPH-Step v1.stl", "model");
+        };
+    </script>
 </body>
 </html>
