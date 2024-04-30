@@ -23,6 +23,9 @@ main:
     
   - title: "CV"
     url: /files/Oliver Hagger CV.pdf
+
+  - title: "3D MAP"
+    url: /3dmap/
     
     
 #  - title: "Guide"
