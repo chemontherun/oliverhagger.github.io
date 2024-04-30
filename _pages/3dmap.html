@@ -87,7 +87,7 @@ author_profile: true
             formData.append('files', file);
         }
         try {
-            const response = await fetch('/upload', {
+            const response = await fetch('/uploads', {
                 method: 'POST',
                 body: formData
             });
