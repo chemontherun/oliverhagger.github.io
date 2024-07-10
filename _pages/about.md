@@ -28,17 +28,17 @@ I am a PhD student at University College London (UCL) and dstl under the supervi
 <div class="article-covers">
   <div class="cover">
     <a href="/images/Cover1.jpg" target="_blank">
-      <img src="/images/Cover1.jpg" alt="Cover 1" width="300" height="200">
+      <img src="/images/Cover1.jpg" alt="Cover 1" width="200" height="300">
     </a>
   </div>
   <div class="cover">
     <a href="/images/Cover2.jpg" target="_blank">
-      <img src="/images/Cover2.jpg" alt="Cover 2" width="300" height="200">
+      <img src="/images/Cover2.jpg" alt="Cover 2" width="200" height="300">
     </a>
   </div>
   <div class="cover">
     <a href="/images/Cover3.jpg" target="_blank">
-      <img src="/images/Cover3.gif" alt="Cover 3" width="300" height="200">
+      <img src="/images/Cover3.gif" alt="Cover 3" width="200" height="300">
     </a>
   </div>
 </div>
@@ -86,6 +86,7 @@ Posts
 
 .grid-item {
   width: 100%;
+  max-width: 750px; /* Adjusted for 1.5x wider */
 }
 
 .article-covers {
@@ -96,8 +97,6 @@ Posts
 }
 
 .cover {
-  width: 200px;
-  height: 300px;
   margin-right: 20px; /* Adjust spacing between covers */
 }
 
@@ -106,7 +105,7 @@ Posts
 }
 
 .cover img {
-  width: 80%;
-  height: 80%;
+  width: 100%; /* Ensure images fill their containers */
+  height: 100%; /* Maintain aspect ratio */
 }
 </style>
