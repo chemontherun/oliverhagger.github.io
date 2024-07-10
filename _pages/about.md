@@ -30,16 +30,16 @@ I am a PhD student at University College London (UCL) and dstl under the supervi
 Posts
 ------
 
-<div style="display: flex; justify-content: center; align-items: center; height: 85vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7214568629982347264" height="700" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+<div style="display: flex; justify-content: center; align-items: center; height: 120vh;">
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7214568629982347264" height="1000" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 85vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7206592314490662912" height="700" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7206592314490662912" height="700" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 85vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7178687917219840001" height="700" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7178687917219840001" height="700" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 
