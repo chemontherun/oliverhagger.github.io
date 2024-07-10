@@ -123,15 +123,10 @@ Posts
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <style>
-.page__content {
-  max-width: 1600px; /* Adjust this value as needed to fit three wider columns */
-  margin: 0 auto;
-  padding: 20px;
-}
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-items: center;
   align-items: start;
