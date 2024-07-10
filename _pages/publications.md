@@ -16,8 +16,8 @@ author_profile: true
   
   
   </td>
-  <td style="border: none; font-size: 20px;padding-left: 10px;padding-top: 10px;"><a href="/images/Cover2.pdf" target="_blank" width="300" height="200">
-      <img src="/images/Cover2.pdf" id="myImg2" alt="Graphical Abstract" width="300" height="200" style="float:right; vertical-align: middle;"/>
+  <td style="border: none; font-size: 20px;padding-left: 10px;padding-top: 10px;"><a href="/images/Cover2.jpg" target="_blank" width="300" height="200">
+      <img src="/images/Cover2.jpg" id="myImg2" alt="Graphical Abstract" width="300" height="200" style="float:right; vertical-align: middle;"/>
     </a></td>
   </tr>
 
@@ -53,8 +53,8 @@ author_profile: true
   
   
   </td>
-  <td style="border: none; font-size: 20px;padding-left: 10px;padding-top: 10px;"><a href="/images/Cover1.pdf" target="_blank" width="300" height="200">
-      <img src="/images/Cover1.pdf" id="myImg2" alt="Graphical Abstract" width="300" height="200" style="float:right; vertical-align: middle;"/>
+  <td style="border: none; font-size: 20px;padding-left: 10px;padding-top: 10px;"><a href="/images/Cover1.jpg" target="_blank" width="300" height="200">
+      <img src="/images/Cover1.jpg" id="myImg2" alt="Graphical Abstract" width="300" height="200" style="float:right; vertical-align: middle;"/>
     </a></td>
   </tr>
 
