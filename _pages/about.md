@@ -38,8 +38,8 @@ I am a PhD student at University College London (UCL) and dstl under the supervi
     </a>
   </div>
   <div class="cover">
-    <a href="/images/Cover3.jpg" target="_blank">
-      <img src="/images/Cover3.jpg" alt="Cover 3" width="200" height="300">
+    <a href="/images/Cover3.gif" target="_blank">
+      <img src="/images/Cover3.gif" alt="Cover 3" width="200" height="300">
     </a>
   </div>
 </div>
