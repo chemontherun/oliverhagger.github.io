@@ -123,20 +123,27 @@ Posts
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <style>
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-    justify-items: center;
-    align-items: start;
-  }
+.page__content {
+  max-width: 1600px; /* Adjust this value as needed to fit three wider columns */
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .grid-item {
-    width: 100%;
-    max-width: 800px;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
 
-  iframe {
-    width: 100%;
-  }
+.grid-item {
+  width: 100%;
+  max-width: 750px; /* Adjusted for 1.5x wider */
+}
+
+iframe {
+  width: 100%;
+}
+
 </style>
