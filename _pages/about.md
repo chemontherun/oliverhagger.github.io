@@ -25,23 +25,6 @@ About me
 ------
 I am a PhD student at University College London (UCL) and dstl under the supervision of Professor Daren Caruana and Dr Imran Khan (dstl). My research focuses on detecting illicit compounds primarily using surface-enhanced Raman scattering. 
 
-<div class="article-covers">
-  <div class="cover">
-    <a href="/images/Cover1.jpg" target="_blank">
-      <img src="/images/Cover1.jpg" alt="Cover 1" width="200" height="300">
-    </a>
-  </div>
-  <div class="cover">
-    <a href="/images/Cover2.jpg" target="_blank">
-      <img src="/images/Cover2.jpg" alt="Cover 2" width="200" height="300">
-    </a>
-  </div>
-  <div class="cover">
-    <a href="/images/Cover3.jpg" target="_blank">
-      <img src="/images/Cover3.gif" alt="Cover 3" width="200" height="300">
-    </a>
-  </div>
-</div>
 
 Posts
 ------
@@ -106,6 +89,6 @@ Posts
 
 .cover img {
   width: 100%; /* Ensure images fill their containers */
-  height: 100%; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
 }
 </style>
