@@ -15,7 +15,7 @@
     @include breakpoint($x-large) {
       max-width: $xx-large; // Change to a larger value if $xx-large is defined
     }
-  }
+   }
   
   .page {
     @include breakpoint($large) {
