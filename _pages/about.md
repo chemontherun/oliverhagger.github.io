@@ -97,6 +97,8 @@ Posts
 }
 
 .cover {
+  width: 300px;
+  height: 200px;
   margin-right: 20px; /* Adjust spacing between covers */
 }
 
@@ -105,7 +107,8 @@ Posts
 }
 
 .cover img {
-  width: 100%; /* Ensure images fill their containers */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
 }
 </style>
