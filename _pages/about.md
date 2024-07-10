@@ -86,7 +86,6 @@ Posts
 
 .grid-item {
   width: 100%;
-  max-width: 750px; /* Adjusted for 1.5x wider */
 }
 
 .article-covers {
@@ -97,8 +96,8 @@ Posts
 }
 
 .cover {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
   margin-right: 20px; /* Adjust spacing between covers */
 }
 
@@ -107,8 +106,7 @@ Posts
 }
 
 .cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover container */
+  width: 80%;
+  height: 80%;
 }
 </style>
