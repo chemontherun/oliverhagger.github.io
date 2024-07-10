@@ -27,29 +27,26 @@ About me
 ------
 I am a PhD student at University College London (UCL) and dstl under the supervision of Professor Daren Caruana and Dr Imran Khan (dstl). My research focuses on detecting illicit compounds primarily using surface-enhanced Raman scattering. 
 
-
-
-
 Posts
 ------
 
 
 
 <div style="display: flex; justify-content: center; align-items: center; height: 130vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="500" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7084460895115833346" height="200" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 
 <div style="display: flex; justify-content: center; align-items: center; height: 145vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069588614602510336" height="600" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069588614602510336" height="200" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 145vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7059209412615229440" height="600" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7059209412615229440" height="200" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 140vh;">
-  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7011689248927932416" height="600" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+  <iframe style="margin: 0 auto; display: block;" src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7011689248927932416" height="200" width="500" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 </div>
 
 
