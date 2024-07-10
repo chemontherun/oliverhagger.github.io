@@ -84,12 +84,12 @@ analytics:
 # Site Author
 author:
   name             : "Oliver Hagger <h6>MChem, PGCE, MRSC</h6>"
-  avatar           : "profile3.jpg"
+  avatar           : "Ollie_1.JPG"
   bio              : "PhD Researcher at University College London & DSTL"
   cv               : 
   location         : "London, UK"
   employer         :
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=THn4XlwAAAAJ&hl=en&authuser=3"
   email            : "oliver.hagger.21@ucl.ac.uk"
   researchgate     : "https://www.researchgate.net/profile/Oliver-Hagger"
   uri              :
