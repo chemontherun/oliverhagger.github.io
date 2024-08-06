@@ -84,7 +84,11 @@ analytics:
 # Site Author
 author:
   name             : "Oliver Hagger <h6>MChem, PGCE, MRSC</h6>"
-  avatar           : "Ollie_1.JPG"
+  #avatar           : "Ollie_1.JPG"
+  avatar  : 
+    src      : "Ollie_1.JPG"
+    alt      : "Portrait of Oliver Hagger"
+    caption  : "Oliver Hagger, PhD Researcher at University College London & Dstl"
   bio              : "PhD Researcher at University College London & Dstl"
   cv               : 
   location         : "London, UK"
