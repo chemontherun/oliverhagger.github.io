@@ -4,8 +4,448 @@ title: "3D Map"
 permalink: /3dmap/
 author_profile: true
 
-
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        hr {
+            border: 1px solid #ddd;
+            margin: 40px 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .content-block {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content-block h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .content-block img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .content-block .text {
+            flex: 1;
+            padding-right: 40px;
+        }
+        .content-block a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content-block a:hover {
+            text-decoration: underline;
+        }
+        .questions {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .questions h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .questions ol {
+            padding-left: 20px;
+        }
+        .questions li {
+            margin-bottom: 10px;
+        }
+        .questions ul {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Pedal Power -->
+    <div class="content-block">
+        <div class="text">
+            <h2>Pedal Power</h2>
+            <a href="https://lnkd.in/ekJNVMw7" target="_blank" rel="noopener noreferrer">Pedal Power</a>
+        </div>
+        <a href="/images/Cycle_data.png" target="_blank">
+            <img src="/images/Cycle_data.png" alt="Pedal Power">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>How did you obtain the information?</strong>
+                <ul>
+                    <li>Exported from my Apple Watch.</li>
+                </ul>
+            </li>
+            <li><strong>What conclusions can be drawn from this?</strong>
+                <ul>
+                    <li>Fridays are the least frequent cycle day, and also the slowest.</li>
+                </ul>
+            </li>
+            <li><strong>Is the commute time quicker going to work, or coming home?</strong>
+                <ul>
+                    <li>Going to work is much faster.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Rugby World Cup Dashboard -->
+    <div class="content-block">
+        <div class="text">
+            <h2>All Time Rugby World Cup Dashboard</h2>
+            <a href="/files/RWC_Markdown.html" target="_blank" rel="noopener noreferrer">Rugby World Cup Markdown</a>
+        </div>
+        <a href="/images/rugby world cup final.png" target="_blank">
+            <img src="/images/rugby world cup final.png" alt="Rugby World Cup Dashboard">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>How did you obtain the information?</strong>
+                <ul>
+                    <li>Wikipedia</li>
+                </ul>
+            </li>
+            <li><strong>Who is the most accurate place kicker all time with at least twenty attempts?</strong>
+                <ul>
+                    <li>Dan Biggar</li>
+                </ul>
+            </li>
+            <li><strong>Which nation has the best winning percentage?</strong>
+                <ul>
+                    <li>New Zealand, closely followed by South Africa</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- VAR Predictions for Big 6 Teams -->
+    <div class="content-block">
+        <div class="text">
+            <h2>VAR Predictions for Big 6 Teams</h2>
+            <a href="/files/Markdown_VAR_Table.html" target="_blank" rel="noopener noreferrer">VAR Decisions</a>
+        </div>
+        <a href="/images/VAR_png.png" target="_blank">
+            <img src="/images/VAR_png.png" alt="Tableau Dashboard">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>Is there a bias for the 'Big 6' clubs compared to the remaining Premier League Teams?</strong>
+                <ul>
+                    <li>In conclusion, the data does not show a definitive pattern of VAR giving more favorable decisions to the 'Big 6' teams.</li>
+                </ul>
+            </li>
+            <li><strong>Who are the 'Big 6' teams?</strong>
+                <ul>
+                    <li>Arsenal, Chelsea, Liverpool, Manchester City, Manchester United, and Tottenham Hotspur</li>
+                </ul>
+            </li>
+            <li><strong>Is the data reliable?</strong>
+                <ul>
+                    <li>ESPN is a large reputable organization, and therefore the data should be accurate.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Monte Carlo Prediction -->
+    <div class="content-block">
+        <div class="text">
+            <h2>Monte Carlo Prediction for upcoming 2023/24 Barclays Premier League Season</h2>
+            <a href="/files/Premier_League_Markdown_Remaining.html" target="_blank" rel="noopener noreferrer">Remaining 2022/23 predictions</a><br/>
+            <a href="/files/Premier_League_Markdown_New_Season.html" target="_blank" rel="noopener noreferrer">New season 2023/24 predictions</a>
+        </div>
+        <a href="/images/Sunderland_png.png" target="_blank">
+            <img src="/images/Sunderland_png.png" alt="Tableau Dashboard">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>How accurate are the predictions?</strong>
+                <ul>
+                    <li>The predictions for the remaining Premier League season agree with OPTA's percentage chance of relegation.</li>
+                </ul>
+            </li>
+            <li><strong>What are the limitations?</strong>
+                <ul>
+                    <li>The results do not take into consideration home ground advantage, and they are based on current form, which is likely to change.</li>
+                </ul>
+            </li>
+            <li><strong>Who should be worried about this data?</strong>
+                <ul>
+                    <li>Sheffield United fans...</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Olympic Games Analysis -->
+    <div class="content-block">
+        <div class="text">
+            <h2>An analysis of Olympic Games hosts using Excel and Tableau</h2>
+            <a href="/files/Tableau_world_view.twbx" target="_blank" rel="noopener noreferrer">Tableau workbook</a><br/>
+            <a href="https://github.com/Ohagger1/World_tile_olympics">Github repository</a>
+        </div>
+        <a href="/images/Dashboard_2.png" target="_blank">
+            <img src="/images/Dashboard_2.png" alt="Tableau Dashboard">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>Which continent has hosted the most Olympic games?</strong>
+                <ul>
+                    <li>Europe has by far hosted the most Olympic Games, both summer and winter.</li>
+                </ul>
+            </li>
+            <li><strong>Which country has hosted the most Olympic games?</strong>
+                <ul>
+                    <li>The United States has hosted the most games by far.</li>
+                </ul>
+            </li>
+            <li><strong>Have all continents hosted at least one Olympic game?</strong>
+                <ul>
+                    <li>No, Africa has not hosted a game at any point.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Japan Analysis -->
+    <div class="content-block">
+        <div class="text">
+            <h2>Render images of Japan's forest coverage and population density</h2>
+            <a href="/files/Population_Japan_markdown.html" target="_blank" rel="noopener noreferrer">Population Markdown</a><br/>
+            <a href="/files/forest_coverage_japan_markdown.html" target="_blank" rel="noopener noreferrer">Forest Coverage Markdown</a><br/>
+            <a href="https://github.com/Ohagger1/World_tile_olympics">Github repository</a>
+        </div>
+        <a href="/images/Japan render png of svg.png" target="_blank">
+            <img src="/images/Japan render png of svg.png" alt="Japan">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>Conclusions</strong>
+                <ul>
+                    <li>Get more RAM to reduce the render time from around 12 hours...</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Teacher to Student Ratio -->
+    <div class="content-block">
+        <div class="text">
+            <h2>Teacher to student ratio</h2>
+            <a href="/files/Rmarkdown-for-student-to-teacher-ratio.html" target="_blank" rel="noopener noreferrer">Markdown</a><br/>
+            <a href="https://github.com/Ohagger1/Teacher_student_ratio">Github repository</a>
+        </div>
+        <a href="/images/Teacher to student ratio final graph.png" target="_blank">
+            <img src="/images/Teacher to student ratio final graph.png" alt="Teacher to student ratio plot">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>Does Asia, having the highest IQ per continent, correlate with the number of students per teacher?</strong>
+                <ul>
+                    <li>It is unclear whether this correlation exists. Further research is needed to determine if such a correlation exists.</li>
+                </ul>
+            </li>
+            <li><strong>Does Europe have an above-average student-to-teacher ratio compared to the rest of the world?</strong>
+                <ul>
+                    <li>Yes, all countries in Europe fall below the worldwide average of 23.5 students to one teacher.</li>
+                </ul>
+            </li>
+            <li><strong>Does Africa have the highest student-to-teacher ratio among all continents?</strong>
+                <ul>
+                    <li>Yes, Africa has the highest average student-to-teacher ratio compared to other continents.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Bike Store Revenue Analysis -->
+    <div class="content-block">
+        <div class="text">
+            <h2>An analysis of revenue generated by a Bike Store was conducted using SQL, Excel and Tableau</h2>
+            <a href="/files/Markdown_for_BikeStores.html" target="_blank" rel="noopener noreferrer">Markdown</a><br/>
+            <a href="https://github.com/Ohagger1/BikeStores">Github repository</a>
+        </div>
+        <a href="/images/Executive Dashboard.png" target="_blank">
+            <img src="/images/Executive Dashboard.png" alt="Executive Dashboard">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>What is the category with the highest revenue?</strong>
+                <ul>
+                    <li>Mountain bikes have the largest portion of total revenue, taking 35.33% of the revenue.</li>
+                </ul>
+            </li>
+            <li><strong>Is there a peak of sales during the summer when the weather is fairer?</strong>
+                <ul>
+                    <li>There is an increase around March and April when people are preparing for the summer. During the summer months, there is no significant increase, presumably because people have already prepared for the fairer weather.</li>
+                </ul>
+            </li>
+            <li><strong>Is there one brand that dominates the revenue?</strong>
+                <ul>
+                    <li>Yes, 'Trek' dominates, being responsible for 59.79% of the total revenue across all years.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Space Missions Analysis -->
+    <div class="content-block">
+        <div class="text">
+            <h2>Space missions from 1957 for the 'Big Three' countries</h2>
+            <a href="/files/R_markdown_space_missions.html" target="_blank" rel="noopener noreferrer">Markdown</a><br/>
+            <a href="https://github.com/Ohagger1/Space_missions">Github repository</a>
+        </div>
+        <a href="/images/space_missions_illustration.png" target="_blank">
+            <img src="/images/space_missions_illustration.png" alt="Space missions from 1957 for the 'Big Three' countries">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>In the 1960s, the Cold War was raging on. But now, who has had more successful or unsuccessful space launch attempts?</strong>
+                <ul>
+                    <li>The USSR has had the highest number of launch attempts, with the majority of them coming from one company.</li>
+                </ul>
+            </li>
+            <li><strong>Is the current Cold War between three countries instead of the two from previous eras?</strong>
+                <ul>
+                    <li>The USSR and USA have significantly more launch attempts compared to China.</li>
+                </ul>
+            </li>
+            <li><strong>Does NASA have the majority of launch attempts in the USA?</strong>
+                <ul>
+                    <li>No, General Dynamics has the highest number of attempts. However, this company launches satellites rather than conventional space rockets.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Bicycle Leasing Company Analysis -->
+    <div class="content-block">
+        <div class="text">
+            <h2>An analysis of rental data from a bicycle leasing company was conducted using both Tableau and R</h2>
+            <a href="/files/Bike_data_markdown.html" target="_blank" rel="noopener noreferrer">Markdown</a><br/>
+            <a href="https://github.com/Ohagger1/Divvy_bike_data">Github repository</a>
+        </div>
+        <a href="/images/Tableau_plot_number_of_rides.png" target="_blank">
+            <img src="/images/Tableau_plot_number_of_rides.png" alt="Tableau Dashboard">
+        </a>
+    </div>
+
+    <div class="questions">
+        <h3>Questions and Conclusions</h3>
+        <ol>
+            <li><strong>Do casual or member users have longer rides?</strong>
+                <ul>
+                    <li>Casual users by far have a longer ride length.</li>
+                </ul>
+            </li>
+            <li><strong>Is the total ride length longer on weekends or during the week?</strong>
+                <ul>
+                    <li>The total ride length increases slowly from Monday to Friday, but then drops off from Friday to Saturday.</li>
+                </ul>
+            </li>
+            <li><strong>Does ride length for casual and members differ from weekdays to weekends?</strong>
+                <ul>
+                    <li>The ride length increases for member users on weekends, while for casual users it decreases on weekends.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <hr>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +466,7 @@ author_profile: true
 
     <script src="/assets/js/three.module.js"></script>
     <script src="/assets/js/STLLoader.js"></script>
-    <!-- <script src="/examples/js/controls/OrbitControls.js"></script> -->
+
   
 
     <script>
@@ -93,4 +533,4 @@ author_profile: true
         };
     </script>
 </body>
-</html>
+</html> -->
