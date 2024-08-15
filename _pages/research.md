@@ -105,8 +105,7 @@ author_profile: true
             <a href="/files/4th year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
         </div>
         <div class="image-content">
-            <img src="/images/thyearproject.PNG" class="img" alt="Sample of 4th year project report" />
-            <figcaption>Preview of the report</figcaption>
+            <img src="/images/thyearproject.PNG" class="img" alt="Sample of 4th year project report" />  
         </div>
     </div>
 
@@ -120,7 +119,6 @@ author_profile: true
         </div>
         <div class="image-content">
             <img src="/images/rdyearproject.PNG" class="img" alt="Sample of 3rd year project report" />
-            <figcaption>Preview of the report</figcaption>
         </div>
     </div>
 
