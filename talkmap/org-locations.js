@@ -25,7 +25,7 @@ var addressPoints = [
     -1.3944555
   ],
   [
-    "San Francisco, CA",
+    "San Francisco, USA",
     37.7853000,
     -122.4044000
   ],
