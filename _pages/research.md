@@ -40,7 +40,18 @@ author_profile: true
             text-decoration: underline;
         }
         .research-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .research-section .text-content {
+            flex: 1;
+            margin-right: 20px;
         }
         .research-section h3 {
             font-size: 24px;
@@ -64,8 +75,8 @@ author_profile: true
             text-decoration: underline;
         }
         .research-section img {
-            display: block;
-            margin: 0 auto;
+            max-width: 250px;
+            height: auto;
             border: 1px solid #000;
             border-radius: 8px;
         }
@@ -80,8 +91,6 @@ author_profile: true
 <body>
 
 <div class="research-container">
-    
-
     <div class="research-intro">
         All work in the following is unpublished work by Oliver Hagger. 
         All downloadable PDFs are password protected. For access, please <a href="mailto:ohagger@icloud.com">email</a>.
@@ -90,21 +99,29 @@ author_profile: true
     <hr>
 
     <div class="research-section">
-        <h3>A review of the crystal sponge method</h3>
-        <p>Supervisor: Professor Simon Coles</p>
-        <a href="/files/4th year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
-        <p><img src="/images/thyearproject.PNG" class="img" alt="Sample of 4th year project report" width="600" height="400"/></p>
-        <figcaption>Preview of the report</figcaption>
+        <div class="text-content">
+            <h3>A review of the crystal sponge method</h3>
+            <p>Supervisor: Professor Simon Coles</p>
+            <a href="/files/4th year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
+        </div>
+        <div class="image-content">
+            <img src="/images/thyearproject.PNG" class="img" alt="Sample of 4th year project report" />
+            <figcaption>Preview of the report</figcaption>
+        </div>
     </div>
 
     <hr>
 
     <div class="research-section">
-        <h3>Calcium based Metal-Organic Frameworks (MOF) derived from CaCO<sub>3</sub> precursor particles</h3>
-        <p>Supervisor: Professor Darren Bradshaw</p>
-        <a href="/files/3rd year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
-        <p><img src="/images/rdyearproject.PNG" class="img" alt="Sample of 3rd year project report" width="600" height="400"/></p>
-        <figcaption>Preview of the report</figcaption>
+        <div class="text-content">
+            <h3>Calcium based Metal-Organic Frameworks (MOF) derived from CaCO<sub>3</sub> precursor particles</h3>
+            <p>Supervisor: Professor Darren Bradshaw</p>
+            <a href="/files/3rd year project.pdf" target="_blank" rel="noopener noreferrer">Download here</a>
+        </div>
+        <div class="image-content">
+            <img src="/images/rdyearproject.PNG" class="img" alt="Sample of 3rd year project report" />
+            <figcaption>Preview of the report</figcaption>
+        </div>
     </div>
 
     <hr>
