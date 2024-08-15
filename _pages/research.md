@@ -87,6 +87,8 @@ author_profile: true
         All downloadable PDFs are password protected. For access, please <a href="mailto:ohagger@icloud.com">email</a>.
     </div>
 
+    <hr>
+
     <div class="research-section">
         <h3>A review of the crystal sponge method</h3>
         <p>Supervisor: Professor Simon Coles</p>
@@ -95,6 +97,8 @@ author_profile: true
         <figcaption>Preview of the report</figcaption>
     </div>
 
+    <hr>
+
     <div class="research-section">
         <h3>Calcium based Metal-Organic Frameworks (MOF) derived from CaCO<sub>3</sub> precursor particles</h3>
         <p>Supervisor: Professor Darren Bradshaw</p>
@@ -102,6 +106,8 @@ author_profile: true
         <p><img src="/images/rdyearproject.PNG" class="img" alt="Sample of 3rd year project report" width="600" height="400"/></p>
         <figcaption>Preview of the report</figcaption>
     </div>
+
+    <hr>
 
     {% if author.googlescholar %}
       <p class="research-intro">You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u></p>
