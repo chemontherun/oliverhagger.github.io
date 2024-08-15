@@ -33,12 +33,11 @@ author_profile: true
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .talk-button:hover {
-            background-color: #005bb5;
+            background-color: #036bc5;
         }
         .talk-map-link {
             text-align: center;
             margin-top: 20px;
-            text-decoration: underline;
             font-size: 18px;
         }
     </style>
@@ -46,12 +45,13 @@ author_profile: true
 <body>
 
 <div class="talks-container">
-    <hr>
+    
 
     <!-- Flexbox container for the button -->
     <div class="talk-button-container">
         <a href="http://www.oliverhagger.com/talkmap" class="talk-button">Click here to see all the places I've given talks</a>
     </div>
+    <hr>
 
     {% if site.talkmap_link == true %}
         <p class="talk-map-link"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
