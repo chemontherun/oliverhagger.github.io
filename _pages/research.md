@@ -6,7 +6,6 @@ author_profile: true
 ---
 <hr>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -81,7 +80,7 @@ author_profile: true
 <body>
 
 <div class="research-container">
-    <hr>
+    
 
     <div class="research-intro">
         All work in the following is unpublished work by Oliver Hagger. 

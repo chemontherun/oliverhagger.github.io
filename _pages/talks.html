@@ -4,7 +4,69 @@ title: "Talks and presentations"
 permalink: /talks/
 author_profile: true
 ---
-<hr>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talks</title>
+    <style>
+        .talks-container {
+            width: 90%;
+            margin: auto;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .talk-button-container {
+            display: flex;
+            justify-content: flex-end; /* Aligns the button to the right */
+            margin-bottom: 20px;
+        }
+        .talk-button {
+            font-size: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #0073e6;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .talk-button:hover {
+            background-color: #005bb5;
+        }
+        .talk-map-link {
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="talks-container">
+    <hr>
+
+    <!-- Flexbox container for the button -->
+    <div class="talk-button-container">
+        <a href="http://www.oliverhagger.com/talkmap" class="talk-button">Click here to see all the places I've given talks</a>
+    </div>
+
+    {% if site.talkmap_link == true %}
+        <p class="talk-map-link"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+    {% endif %}
+
+    {% for post in site.talks reversed %}
+      {% include archive-single-talk.html %}
+    {% endfor %}
+</div>
+
+</body>
+</html>
+
+
+<!-- <hr>
 
 <a href="http://www.oliverhagger.com/talkmap"style="font-size: 20px;"">Click here to see all the places I've given talks</a><br/>
 
@@ -16,4 +78,4 @@ author_profile: true
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
-{% endfor %}
+{% endfor %} -->
