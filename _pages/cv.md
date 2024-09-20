@@ -13,7 +13,7 @@ redirect_from:
 
  
 
-<a href="/files/Oliver Hagger CV_.pdf">Download here</a>
+<a href="/files/Oliver Hagger CV.pdf">Download here</a>
 
 <img src="/images/OliverHaggerCV.PNG" class="img" alt="CV" width="600" height="400"/>
 
