@@ -29,17 +29,17 @@ I am a PhD student at University College London (UCL) and dstl under the supervi
 <div class="article-covers">
   <div class="cover">
     <a href="https://doi.org/10.1039/D3MA00249G" target="_blank">
-      <img src="/images/Cover2.jpg" alt="Cover 1" width="200" height="300">
+      <img src="/images/Cover2.jpg" alt="Cover 1" width="300" height="400">
     </a>
   </div>
   <div class="cover">
     <a href="https://doi.org/10.1002/admi.202400256" target="_blank">
-      <img src="/images/Cover1.jpg" alt="Cover 2" width="200" height="300">
+      <img src="/images/Cover1.jpg" alt="Cover 2" width="300" height="400">
     </a>
   </div>
   <div class="cover">
     <a href="https://doi.org/10.1016/j.apmt.2024.102286" target="_blank">
-      <img src="/images/Cover3.gif" alt="Cover 3" width="200" height="300">
+      <img src="/images/Cover3.jpg" alt="Cover 3" width="300" height="400">
     </a>
   </div>
 </div>
