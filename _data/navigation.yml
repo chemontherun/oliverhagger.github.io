@@ -15,8 +15,8 @@ main:
   # - title: "Certifications"
   #   url: /certifications/
 
-  - title: "Blog"
-    url: /blogs/
+  - title: "Articles"
+    url: /articles/
 
   - title: "Premier League Injury Report"
     url: /Injuryreport/
