@@ -27,8 +27,8 @@ main:
   - title: "SERS EF Calculator"
     url: /enhancement/
     
-  - title: "CV"
-    url: /files/Oliver Hagger CV_.pdf
+  # - title: "CV"
+  #   url: /files/Oliver Hagger CV_.pdf
 
 
     
