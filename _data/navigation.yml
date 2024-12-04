@@ -18,8 +18,8 @@ main:
   - title: "Articles"
     url: /articles/
 
-  - title: "Premier League Injury Report"
-    url: /Injuryreport/
+  # - title: "Premier League Injury Report"
+  #   url: /Injuryreport/
         
   - title: "Data analytics"
     url: /data-analytics/
