@@ -148,12 +148,12 @@ author_profile: true
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Making Research Move: A Step-by-Step Guide to Spinning Academic Posters</title>
   <style>
-    body {
+    /* body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-    }
+    } */
     header {
       background: #ffffff;
       color: #fff;
@@ -166,7 +166,7 @@ author_profile: true
       margin: 0 auto;
     }
     h1, h2, h3 {
-      color: #00539C;
+      color: #000000;
     }
     p {
       margin: 0 0 15px;
@@ -188,6 +188,9 @@ author_profile: true
       padding: 20px;
       background: #f9f9f9;
       border: 1px solid #ddd;
+    }
+    footer {
+        margin-bottom: 50px;
     }
     .links a {
       color: #00539C;
@@ -220,7 +223,7 @@ author_profile: true
   <p>To ensure smooth rotation, the circular rotating section had to fit entirely within the boundaries of the outer poster. Each of the four panels was arranged at 90-degree angles to avoid overlap. This setup allowed viewers to see one scene at a time.</p>
   <div style="text-align: center;">
     <img src="/images/poster_rot.jpg" alt="Descriptive alt text" style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p>
+    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p></div>
   <p>For structural support, I experimented with materials like cardboard and plastic sheets but ultimately adopted a design inspired by kites. Four rods connected to a central hub provided stability without compromising mobility. To further enhance the structure, I 3D-printed a loop component that was attached to the edge of the spinning poster. This loop allowed the rods to slot through and connect seamlessly to the central hub, ensuring a secure and stable framework while maintaining smooth rotational movement.</p>
 
   <h3>2. The Motor and Encoder</h3>
@@ -229,7 +232,7 @@ author_profile: true
   <p>Voltage Limitations: Most poster symposiums lack mains power, so I had to rely on a portable power bank. While many power banks supply only 5V, I sourced one with a 12V output, which provided sufficient torque but caused the motor and driver board to overheat, posing a potential fire hazard. Due to safety regulations, I reverted to a 5V power supply to eliminate overheating risks.</p>
   <div style="text-align: center;">
     <img src="/images/87bfa80f-04d4-4ff2-b278-c4c0ebb3b18e.PNG" alt="Descriptive alt text" style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p>
+    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p></div>
   <p>To compensate for the lower voltage, I designed and 3D-printed a 5:1 planetary gearbox. This significantly increased the torque output of the NEMA17 motor while maintaining a compact design, ensuring reliable operation within the safety and power constraints.</p>
 
   <h3>The final motor setup included:</h3>
@@ -243,7 +246,7 @@ author_profile: true
 
   <div style="text-align: center;">
     <img src="/images/Image__3_-removebg-preview1.PNG" alt="Descriptive alt text" style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p>
+    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p></div>
 
   <p>The speed and delay were adjusted to ensure the movement was slow enough for viewers to read the text but fast enough to maintain a dynamic visual element. Additionally, the step movement was modified from 250 to 267 to overcome the friction between the two posters. With this setup, the motor could smoothly rotate the poster using a simple control loop:</p>
 
@@ -255,13 +258,13 @@ author_profile: true
   </div>
   <div style="text-align: center;">
     <img src="/images/Image__10_-removebg-preview (1).png" alt="Descriptive alt text" style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p>
+    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p></div>
   
   <p>For the final assembly, I 3D-printed a front and a back central panel. The front panel featured holes to accommodate the motor screws, while the back panel included additional holes to secure the rods, ensuring the poster's structural integrity.</p>
   <p>The final step involved attaching the poster, along with the geared motor, power bank, and Arduino, to the poster board. To achieve this, VELCRO Industrial Strength Hook & Loop Self-Adhesive Sticky Coins were used.</p>
   <div style="text-align: center;">
     <img src="/images/Image__11_-removebg-preview (1).png" alt="Descriptive alt text" style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p>
+    <p style="margin-top: 5px; font-style: italic; color: gray;">Gear Motor Version 1, 2024</p></div>
   <h2>Lessons Learned and Future Plans</h2>
   <p>Clearly, this setup is far from perfect, with room for improvement in all aspects. However, given the time constraints, it was an innovative solution that successfully stood out and captured attention.</p>
 
