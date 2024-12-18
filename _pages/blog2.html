@@ -52,15 +52,34 @@ author_profile: true
       text-align: justify; /* Medium uses justified text */
     }
   
-    code {
-      background: #f4f4f4;
-      border-left: 4px solid #00539C;
-      padding: 10px;
-      display: block;
-      margin: 10px 0;
-      overflow-x: auto;
-      font-family: 'Courier New', Courier, monospace;
-    }
+    .code-block {
+  background-color: #f4f4f4; /* Dark background */
+  color: #000000; /* Light text */
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace; /* Monospaced font for code */
+  font-size: 16px;
+  white-space: pre-wrap; /* Ensures long lines wrap correctly */
+  overflow-x: auto; /* Adds horizontal scroll if code is too wide */
+}
+
+.keyword {
+  color: #c792ea; /* Purple for keywords like int, void, HIGH, OUTPUT */
+}
+
+.define {
+  color: #ffcb6b; /* Yellow for #define macros */
+}
+
+.function {
+  color: #80cbc4; /* Teal for function names like setup, loop */
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
   
     ul {
       list-style-type: disc;
@@ -144,6 +163,42 @@ author_profile: true
     <p style="margin-top: 5px; font-style: italic; color: gray; font-size: 12px;">Arduino R4 Wi-Fi and Arduino Motor Shield with a 40 x 40 mm fan, all housed within a custom 3D-printed case.</p></div>
 
   <p>The speed and delay were adjusted to ensure the movement was slow enough for viewers to read the text but fast enough to maintain a dynamic visual element. Additionally, the step movement was modified from 250 to 267 to overcome the friction between the two posters. With this setup, the motor could smoothly rotate the poster using a simple control loop:</p>
+  <pre class="code-block">
+    <code>
+      <span class="keyword">#include</span> "Stepper.h"
+  
+      const <span class="keyword">int</span> stepsPerRevolution = 200;
+  
+      <span class="define">#define</span> pwmA 3
+      <span class="define">#define</span> pwmB 11
+      <span class="define">#define</span> brakeA 9
+      <span class="define">#define</span> brakeB 8
+      <span class="define">#define</span> dirA 12
+      <span class="define">#define</span> dirB 13
+  
+      Stepper myStepper = Stepper(stepsPerRevolution, dirA, dirB);
+  
+      <span class="function">void</span> setup() {
+        pinMode(pwmA, <span class="keyword">OUTPUT</span>);
+        pinMode(pwmB, <span class="keyword">OUTPUT</span>);
+        pinMode(brakeA, <span class="keyword">OUTPUT</span>);
+        pinMode(brakeB, <span class="keyword">OUTPUT</span>);
+  
+        digitalWrite(pwmA, <span class="keyword">HIGH</span>);
+        digitalWrite(pwmB, <span class="keyword">HIGH</span>);
+        digitalWrite(brakeA, <span class="keyword">LOW</span>);
+        digitalWrite(brakeB, <span class="keyword">LOW</span>);
+  
+        myStepper.setSpeed(30);
+      }
+  
+      <span class="function">void</span> loop() {
+        myStepper.step(267);
+  
+        delay(7000);
+      }
+    </code>
+  </pre>
 
   <h3>3. The Final Poster</h3>
   <p>Before the conference, I rehearsed the setup on a poster board, which allowed me to make final adjustments. The gearbox featured three holes through which I inserted screws secured with nuts. These protruding screws served as pins to connect to the spinning poster element, enabling movement without causing damage.</p>
