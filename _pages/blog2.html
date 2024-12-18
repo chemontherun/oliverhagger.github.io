@@ -5,7 +5,7 @@ author_profile: true
 ---
 <hr>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -139,6 +139,117 @@ author_profile: true
         </div>
     </div>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Making Research Move: A Step-by-Step Guide to Spinning Academic Posters</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #00539C;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      color: #00539C;
+    }
+    p {
+      margin: 0 0 15px;
+    }
+    code {
+      background: #f4f4f4;
+      border-left: 4px solid #00539C;
+      padding: 5px;
+      display: block;
+      margin: 10px 0;
+      overflow-x: auto;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .links {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+    .links a {
+      color: #00539C;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Making Research Move: A Step-by-Step Guide to Spinning Academic Posters</h1>
+</header>
+
+<main>
+  <p>Presenting academic research at conferences is a staple in the journey of any researcher, but making your work stand out can be a challenge. At my recent conference, I wanted to take this challenge head-on. So, I created something a bit unconventional: a spinning academic poster. The result? Not only did I capture the attention of my peers, but I also won a poster prize for my efforts.</p>
+  <p>Here's how I brought the spinning poster concept to life, the challenges I faced, and how it led to success.</p>
+
+  <h2>The Idea: A New Take on the Traditional Poster</h2>
+  <p>Academic posters typically follow a simple format: static, two-dimensional, and often confined to a few key sections of a researcher's work. While effective, they can lack engagement, especially in a room full of similar posters. I wanted to find a way to give my research a more dynamic presence.</p>
+  <p>The solution? A rotating or "spinning" poster. Inspired by manual spinning posters which have cropped up at various conferences across the world recently, I wanted to take this one step further. I decided to add an element of movement.</p>
+
+  <h3>1. The Poster Design</h3>
+  <p>The first challenge was to design a poster that incorporated a rotating section. This required two separate layers:</p>
+  <ul>
+    <li><strong>The Outer Poster:</strong> The top layer with a cut-out section to frame the rotating element.</li>
+    <li><strong>The Rotating Poster:</strong> Positioned behind the top layer, it featured four distinct panels to showcase different parts of the research.</li>
+  </ul>
+  <p>To ensure smooth rotation, the circular rotating section had to fit entirely within the boundaries of the outer poster. Each of the four panels was arranged at 90-degree angles to avoid overlap. This setup allowed viewers to see one scene at a time.</p>
+  <p>For structural support, I experimented with materials like cardboard and plastic sheets but ultimately adopted a design inspired by kites. Four rods connected to a central hub provided stability without compromising mobility. To further enhance the structure, I 3D-printed a loop component that was attached to the edge of the spinning poster. This loop allowed the rods to slot through and connect seamlessly to the central hub, ensuring a secure and stable framework while maintaining smooth rotational movement.</p>
+
+  <h3>2. The Motor and Encoder</h3>
+  <p>Initially, my idea was straightforward: attach a small motor to the centre of the rotating section of the poster, with some form of support to stabilise it. My first choice was a 5V stepper motor (28BYJ-48) with a ULN2003 driver board. To control the motor, I used an Arduino R4 WiFi for precise positioning. The Stepper Motor library from Arduino provided smooth movement during early testing.</p>
+  <p>However, this motor lacked the torque to rotate the poster. Upgrading to a NEMA17 stepper motor offered more power but introduced new challenges:</p>
+  <ul>
+    <li><strong>Voltage Limitations:</strong> Most poster symposiums lack mains power, so I had to rely on a portable power bank. While many power banks supply only 5V, I sourced one with a 12V output, which provided sufficient torque but caused the motor and driver board to overheat, posing a potential fire hazard.</li>
+    <li><strong>Health and Safety:</strong> Due to safety regulations, I reverted to a 5V power supply to eliminate overheating risks.</li>
+  </ul>
+  <p>To compensate for the lower voltage, I designed and 3D-printed a 5:1 planetary gearbox. This significantly increased the torque output of the NEMA17 motor while maintaining a compact design, ensuring reliable operation within the safety and power constraints.</p>
+
+  <h3>3. The Final Poster</h3>
+  <p>Before the conference, I rehearsed the setup on a poster board, which allowed me to make final adjustments. The gearbox featured three holes through which I inserted screws secured with nuts. These protruding screws served as pins to connect to the spinning poster element, enabling movement without causing damage.</p>
+  <p>For the final assembly, I 3D-printed a front and a back central panel. The front panel featured holes to accommodate the motor screws, while the back panel included additional holes to secure the rods, ensuring the poster's structural integrity.</p>
+  <p>The final step involved attaching the poster, along with the geared motor, power bank, and Arduino, to the poster board. To achieve this, VELCRO Industrial Strength Hook & Loop Self-Adhesive Sticky Coins were used.</p>
+
+  <h2>Lessons Learned and Future Plans</h2>
+  <p>Clearly, this setup is far from perfect, with room for improvement in all aspects. However, given the time constraints, it was an innovative solution that successfully stood out and captured attention.</p>
+
+  <div class="links">
+    <h3>Resources</h3>
+    <ul>
+      <li><a href="https://github.com/Ohagger1/SpinningPoster">GitHub Repository</a></li>
+      <li><a href="https://www.amazon.co.uk">VELCRO Brand Heavy Duty Coins</a></li>
+      <li><a href="https://uk.rs-online.com">Ansmann PB212 Power Bank</a></li>
+    </ul>
+  </div>
+</main>
+
+</body>
 </html>
+
 
 
