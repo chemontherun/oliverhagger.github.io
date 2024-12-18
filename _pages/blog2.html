@@ -117,7 +117,7 @@ author_profile: true
   <p>To ensure smooth rotation, the circular rotating section had to fit entirely within the boundaries of the outer poster. Each of the four panels was arranged at 90-degree angles to avoid overlap. This setup allowed viewers to see one scene at a time.</p>
   <div style="text-align: center;">
     <img src="/images/poster_rot.jpg" alt="Two poster parts. Overlaying poster (left). Rotating poster part (right)." style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">Two poster parts. Overlaying poster (left). Rotating poster part (right).</p></div>
+    <p style="margin-top: 5px; font-style: italic; color: gray; font-size: 12px;">Two poster parts. Overlaying poster (left). Rotating poster part (right).</p></div>
   <p>For structural support, I experimented with materials like cardboard and plastic sheets but ultimately adopted a design inspired by kites. Four rods connected to a central hub provided stability without compromising mobility. To further enhance the structure, I 3D-printed a loop component that was attached to the edge of the spinning poster. This loop allowed the rods to slot through and connect seamlessly to the central hub, ensuring a secure and stable framework while maintaining smooth rotational movement.</p>
 
   <h3>2. The Motor and Encoder</h3>
@@ -126,7 +126,7 @@ author_profile: true
   <p>Voltage Limitations: Most poster symposiums lack mains power, so I had to rely on a portable power bank. While many power banks supply only 5V, I sourced one with a 12V output, which provided sufficient torque but caused the motor and driver board to overheat, posing a potential fire hazard. Due to safety regulations, I reverted to a 5V power supply to eliminate overheating risks.</p>
   <div style="text-align: center;">
     <img src="/images/87bfa80f-04d4-4ff2-b278-c4c0ebb3b18e.PNG" alt="5:1 3D-printed planetary NEMA17 gearbox." style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">5:1 3D-printed planetary NEMA17 gearbox.</p></div>
+    <p style="margin-top: 5px; font-style: italic; color: gray; font-size: 12px;">5:1 3D-printed planetary NEMA17 gearbox.</p></div>
   <p>To compensate for the lower voltage, I designed and 3D-printed a 5:1 planetary gearbox. This significantly increased the torque output of the NEMA17 motor while maintaining a compact design, ensuring reliable operation within the safety and power constraints.</p>
 
   <h3>The final motor setup included:</h3>
@@ -140,7 +140,7 @@ author_profile: true
 
   <div style="text-align: center;">
     <img src="/images/Image__3_-removebg-preview1.PNG" alt="Arduino R4 Wi-Fi and Arduino Motor Shield with a 40 x 40 mm fan, all housed within a custom 3D-printed case." style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">Arduino R4 Wi-Fi and Arduino Motor Shield with a 40 x 40 mm fan, all housed within a custom 3D-printed case.</p></div>
+    <p style="margin-top: 5px; font-style: italic; color: gray; font-size: 12px;">Arduino R4 Wi-Fi and Arduino Motor Shield with a 40 x 40 mm fan, all housed within a custom 3D-printed case.</p></div>
 
   <p>The speed and delay were adjusted to ensure the movement was slow enough for viewers to read the text but fast enough to maintain a dynamic visual element. Additionally, the step movement was modified from 250 to 267 to overcome the friction between the two posters. With this setup, the motor could smoothly rotate the poster using a simple control loop:</p>
 
@@ -148,7 +148,7 @@ author_profile: true
   <p>Before the conference, I rehearsed the setup on a poster board, which allowed me to make final adjustments. The gearbox featured three holes through which I inserted screws secured with nuts. These protruding screws served as pins to connect to the spinning poster element, enabling movement without causing damage.</p>
   <div style="text-align: center;">
     <img src="/images/motor1.png" alt="Complete motor set up" style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">(Left) Complete motor setup, shown from left to right: poster backplate, 5:1 3D-printed planetary NEMA17 gearbox, NEMA17 motor, and NEMA17 housing for attachment to the poster board. (Right) Real NEMA17 motor with protruding screws at the front of the 3D-printed planetary gearbox and NEMA17 housing.</p>
+    <p style="margin-top: 5px; font-style: italic; color: gray; font-size: 12px;">(Left) Complete motor setup, shown from left to right: poster backplate, 5:1 3D-printed planetary NEMA17 gearbox, NEMA17 motor, and NEMA17 housing for attachment to the poster board. (Right) Real NEMA17 motor with protruding screws at the front of the 3D-printed planetary gearbox and NEMA17 housing.</p>
   </div>
   <!-- <div style="text-align: center;">
     <img src="/images/Image__10_-removebg-preview (1).png" alt="Real NEMA17 motor with protruding screws at the front of the 3D-printed planetary gearbox and NEMA17 housing." style="display: block; margin: 0 auto;">
@@ -158,7 +158,7 @@ author_profile: true
   <p>The final step involved attaching the poster, along with the geared motor, power bank, and Arduino, to the poster board. To achieve this, VELCRO Industrial Strength Hook & Loop Self-Adhesive Sticky Coins were used.</p>
   <div style="text-align: center;">
     <img src="/images/Image__11_-removebg-preview (1).png" alt="VELCRO attached to the back of the NEMA17 housing." style="display: block; margin: 0 auto;">
-    <p style="margin-top: 5px; font-style: italic; color: gray;">VELCRO attached to the back of the NEMA17 housing.</p></div>
+    <p style="margin-top: 5px; font-style: italic; color: gray; font-size: 12px;">VELCRO attached to the back of the NEMA17 housing.</p></div>
   <h2>Lessons Learned and Future Plans</h2>
   <p>Clearly, this setup is far from perfect, with room for improvement in all aspects. However, given the time constraints, it was an innovative solution that successfully stood out and captured attention.</p>
   
