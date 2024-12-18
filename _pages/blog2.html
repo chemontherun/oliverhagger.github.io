@@ -55,7 +55,7 @@ author_profile: true
     .code-block {
   background-color: #f4f4f4; /* Dark background */
   color: #000000; /* Light text */
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   font-family: 'Courier New', monospace; /* Monospaced font for code */
   font-size: 16px;
@@ -73,6 +73,10 @@ author_profile: true
 
 .function {
   color: #80cbc4; /* Teal for function names like setup, loop */
+}
+
+.number {
+    color: #492fcd; /* Teal for function names like setup, loop */    
 }
 
 code {
@@ -167,7 +171,7 @@ code {
     <code>
       <span class="keyword">#include</span> "Stepper.h"
   
-      const <span class="keyword">int</span> stepsPerRevolution = 200;
+      const <span class="keyword">int</span> stepsPerRevolution = <span class="number">200</span>;
   
       <span class="define">#define</span> pwmA 3
       <span class="define">#define</span> pwmB 11
@@ -189,16 +193,17 @@ code {
         digitalWrite(brakeA, <span class="keyword">LOW</span>);
         digitalWrite(brakeB, <span class="keyword">LOW</span>);
   
-        myStepper.setSpeed(30);
+        myStepper.setSpeed(<span class="number">30</span>);
       }
   
       <span class="function">void</span> loop() {
-        myStepper.step(267);
+        myStepper.step(<span class="number">267</span>);
   
-        delay(7000);
+        delay(<span class="number">7000</span>);
       }
     </code>
   </pre>
+  <p style="margin-top: 5px; font-style: italic; color: gray; font-size: 12px;">Code used for controlling NEMA17 stepper motor</p>
 
   <h3>3. The Final Poster</h3>
   <p>Before the conference, I rehearsed the setup on a poster board, which allowed me to make final adjustments. The gearbox featured three holes through which I inserted screws secured with nuts. These protruding screws served as pins to connect to the spinning poster element, enabling movement without causing damage.</p>
