@@ -118,7 +118,7 @@ Welcome to my personal website
 
 About me
 ------
-I am a PhD student at University College London (UCL) and dstl under the supervision of Professor Daren Caruana and Dr Imran Khan (dstl). My research focuses on detecting illicit compounds primarily using surface-enhanced Raman scattering. 
+
 
 
 <div class="article-covers">
