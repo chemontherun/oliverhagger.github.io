@@ -123,6 +123,11 @@ About me
 
 <div class="article-covers">
   <div class="cover">
+    <a href="https://doi.org/10.1016/j.matdes.2025.113681" target="_blank">
+      <img src="/images/Cover4.jpg" alt="Cover 4" width="300" height="400">
+    </a>
+  </div>
+  <div class="cover">
     <a href="https://doi.org/10.1039/D3MA00249G" target="_blank">
       <img src="/images/Cover2.jpg" alt="Cover 1" width="300" height="400">
     </a>
