@@ -116,9 +116,6 @@ Posts
 Welcome to my personal website
 ------
 
-About me
-------
-
 
 
 <div class="article-covers">
