@@ -9,14 +9,14 @@ main:
   # - title: "Teaching"
   #   url: /teaching/
 
-  - title: "Research"
-    url: /research/    
+  #- title: "Research"
+  #  url: /research/    
     
   # - title: "Certifications"
   #   url: /certifications/
 
-  - title: "Articles"
-    url: /articles/
+  #- title: "Articles"
+  #  url: /articles/
 
   # - title: "Premier League Injury Report"
   #   url: /Injuryreport/
