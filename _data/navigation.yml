@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  #- title: "Publications"
+  #  url: /publications/
 
   #- title: "Talks"
   #  url: /talks/    
@@ -21,11 +21,11 @@ main:
   # - title: "Premier League Injury Report"
   #   url: /Injuryreport/
         
-  - title: "Data analytics"
-    url: /data-analytics/
+  #- title: "Data analytics"
+  #  url: /data-analytics/
 
-  - title: "SERS EF Calculator"
-    url: /enhancement/
+  #- title: "SERS EF Calculator"
+  #  url: /enhancement/
     
   # - title: "CV"
   #   url: /files/Oliver Hagger CV_.pdf
