@@ -8,13 +8,13 @@
 # Site Settings
 locale                   : "en-UK"
 remote_theme             : pages-themes/cayman@v0.2.0
-title                    : "Oliver Hagger"
+title                    : 
 title_separator          : "-"
-name                     : &name "Oliver Hagger"
-description              : &description "PhD Researcher at University College London and Dstl"
+name                     : 
+description              : 
 url                      : https://oliverhagger.com #kavanase.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Ohagger1/oliverhagger.github.io"
+repository               : 
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -83,14 +83,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Oliver Hagger                        "
-  avatar           : "Ollie_1.JPG"
+  name             :
+  avatar           : 
   cv               : 
-  location         : "London, UK"
+  location         : 
   employer         :
-  googlescholar    : "https://scholar.google.com/citations?user=THn4XlwAAAAJ&hl=en&authuser=3"
-  email            : "oliver.hagger.21@ucl.ac.uk"
-  researchgate     : "https://www.researchgate.net/profile/Oliver-Hagger"
+  googlescholar    : 
+  email            : 
+  researchgate     : 
   uri              :
   bitbucket        :
   codepen          :
@@ -98,19 +98,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Ohagger1"
+  github           : 
   google_plus      :
-  kaggle           : "olliehagger"
+  kaggle           : 
   keybase          :
   instagram        : 
   lastfm           :
-  linkedin         : "oliver-hagger"
-  orcid            : "https://orcid.org/0000-0001-7336-8082"
+  linkedin         : 
+  orcid            : 
   pinterest        :
   speakerdeck      : 
-  tableau          : "oliver.hagger"
+  tableau          : 
   tumblr           :
-  twitter          : "olliechem"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
